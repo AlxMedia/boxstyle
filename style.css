@@ -746,12 +746,12 @@ box-shadow: 0 0 2px rgba(255,255,255,0.4);
 	
 	/* common */
 	#nav-footer .nav { padding-bottom: 20px; }
-	#nav-footer .nav li a { color: #666; border-top: 1px solid #eee; }	
+	#nav-footer .nav li a { color: #666; border-top: 1px solid #e5e5e5; }	
 	/* level 1 */
-	#nav-footer .nav li > a:hover { background: #f4f4f4; color: #333; }
+	#nav-footer .nav li > a:hover { background: #eee; color: #333; }
 	#nav-footer .nav li.current_page_item > a, 
 	#nav-footer .nav li.current-menu-item > a,
-	#nav-footer .nav li.current-post-parent > a { background: #f4f4f4; color: #333; }
+	#nav-footer .nav li.current-post-parent > a { background: #eee; color: #333; }
 	
 }
 

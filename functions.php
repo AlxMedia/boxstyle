@@ -80,6 +80,7 @@ if ( ! function_exists( 'boxstyle_setup' ) ) {
 		register_nav_menus( array(
 			'mobile' 	=> esc_html__( 'Mobile', 'boxstyle' ),
 			'header' 	=> esc_html__( 'Header', 'boxstyle' ),
+			'footer' 	=> esc_html__( 'Footer', 'boxstyle' ),
 		) );
 	}
 	

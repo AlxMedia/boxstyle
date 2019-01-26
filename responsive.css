@@ -59,7 +59,8 @@
 	.site-title { padding: 20px 0; margin: 0; width: 100%; float: none; line-height: 50px; border-bottom: 1px solid rgba(255,255,255,0.1); }
 	.site-title a { text-align: center; }
 	#nav-mobile.nav-container,
-	#nav-header.nav-container { padding-left: 0; padding-right: 0; }
+	#nav-header.nav-container,
+	#nav-footer.nav-container { padding-left: 0; padding-right: 0; }
 	.toggle-search { left: 20px; right: auto; top: 5px; bottom: auto; }
 	.search-expand { bottom: auto; right: 50px; left: 64px; top: 5px; width: auto; }
 	

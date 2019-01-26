@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Boxstyle\n"
-"POT-Creation-Date: 2019-01-25 13:00+0100\n"
+"POT-Creation-Date: 2019-01-26 21:46+0100\n"
 "PO-Revision-Date: 2018-09-21 21:27+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -49,19 +49,19 @@ msgstr ""
 msgid "Continue reading..."
 msgstr ""
 
-#: footer.php:60
+#: footer.php:68
 msgid "Y"
 msgstr ""
 
-#: footer.php:60
+#: footer.php:68
 msgid "All Rights Reserved."
 msgstr ""
 
-#: footer.php:66
+#: footer.php:74
 msgid "Powered by"
 msgstr ""
 
-#: footer.php:66
+#: footer.php:74
 msgid "Theme by"
 msgstr ""
 
@@ -73,79 +73,83 @@ msgstr ""
 msgid "Header"
 msgstr ""
 
-#: functions.php:159
+#: functions.php:83 functions/theme-options.php:39
+msgid "Footer"
+msgstr ""
+
+#: functions.php:160
 msgid "Primary"
 msgstr ""
 
-#: functions.php:159
+#: functions.php:160
 msgid "Normal full width sidebar"
 msgstr ""
 
-#: functions.php:161 functions/theme-options.php:260
+#: functions.php:162 functions/theme-options.php:260
 msgid "Footer Ads"
 msgstr ""
 
-#: functions.php:161
+#: functions.php:162
 msgid "Footer ads area"
 msgstr ""
 
-#: functions.php:163
+#: functions.php:164
 msgid "Frontpage Top 1"
 msgstr ""
 
-#: functions.php:163 functions.php:164 functions.php:165 functions.php:166
+#: functions.php:164 functions.php:165 functions.php:166 functions.php:167
 msgid "Frontpage area"
 msgstr ""
 
-#: functions.php:164
+#: functions.php:165
 msgid "Frontpage Top 2"
 msgstr ""
 
-#: functions.php:165
+#: functions.php:166
 msgid "Frontpage Bottom 1"
 msgstr ""
 
-#: functions.php:166
+#: functions.php:167
 msgid "Frontpage Bottom 2"
 msgstr ""
 
-#: functions.php:168
+#: functions.php:169
 msgid "Footer 1"
 msgstr ""
 
-#: functions.php:168 functions.php:169 functions.php:170 functions.php:171
+#: functions.php:169 functions.php:170 functions.php:171 functions.php:172
 msgid "Widgetized footer"
 msgstr ""
 
-#: functions.php:169
+#: functions.php:170
 msgid "Footer 2"
 msgstr ""
 
-#: functions.php:170
+#: functions.php:171
 msgid "Footer 3"
 msgstr ""
 
-#: functions.php:171
+#: functions.php:172
 msgid "Footer 4"
 msgstr ""
 
-#: functions.php:632
+#: functions.php:634
 msgid "Alx Extensions"
 msgstr ""
 
-#: functions.php:636
+#: functions.php:638
 msgid "Meta Box"
 msgstr ""
 
-#: functions.php:640
+#: functions.php:642
 msgid "Regenerate Thumbnails"
 msgstr ""
 
-#: functions.php:644
+#: functions.php:646
 msgid "WP-PageNavi"
 msgstr ""
 
-#: functions.php:648
+#: functions.php:650
 msgid "Responsive Lightbox"
 msgstr ""
 
@@ -184,10 +188,6 @@ msgstr ""
 
 #: functions/theme-options.php:29
 msgid "Blog"
-msgstr ""
-
-#: functions/theme-options.php:39
-msgid "Footer"
 msgstr ""
 
 #: functions/theme-options.php:49

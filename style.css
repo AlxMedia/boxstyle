@@ -1,7 +1,7 @@
 /*
 Theme Name: Boxstyle
 Theme URI: http://alxmedia.se/themes/boxstyle/
-Version: 1.0.2
+Version: 1.0.3
 Description: <a href="http://alxmedia.se/themes/boxstyle/">Boxstyle</a> is a responsive 100% high resolution theme for personal blogs. The feature list is long: Unlimited accent colors, unlimited widget areas, 0-1 sidebars to the left or right that can be uniquely specified for each page or post, 220px fixed width sidebar, 0-4 footer widget columns, almost zero layout images, related posts and post nav, 5 post formats, good SEO, 2 flexible custom widgets, localisation support, social links, logo upload and many more useful admin panel features.
 Author: Alexander Agnarson
 Author URI: http://alxmedia.se
@@ -706,6 +706,54 @@ box-shadow: 0 0 2px rgba(255,255,255,0.4);
 #footer-bottom .social-links .social-tooltip { font-size: 20px; }
 #footer-bottom .social-links .social-tooltip:hover:after { background: #333; color: #fff; }
 #footer-bottom .social-links .social-tooltip:hover:before { border-color: #333 transparent; }
+
+/*  footer : nav
+/* ------------------------------------ */
+#nav-footer.nav-container { background: #f4f4f4; z-index: 97; border-bottom: 1px solid #e5e5e5; padding-left: 20px; padding-right: 20px; }
+#nav-footer .nav-toggle { background: transparent; color: #333; }
+#nav-footer .nav-text { color: #666; }
+
+@media only screen and (min-width: 720px) {
+
+	/* common */
+	#nav-footer .nav { font-weight: 600; }
+	#nav-footer .nav li a { font-size: 14px; color: #777; }	
+	/* level 1 */
+	#nav-footer .nav > li { margin-right: 30px; border-right: none; }
+	#nav-footer .nav > li:first-child { margin-left: 30px; }
+	#nav-footer .nav > li > a { padding: 18px 0; }
+	#nav-footer .nav > li > a:hover, 
+	#nav-footer .nav > li:hover > a { background: transparent; }
+	#nav-footer .nav li > a:hover, 
+	#nav-footer .nav li:hover > a, 
+	#nav-footer .nav li.current_page_item > a, 
+	#nav-footer .nav li.current-menu-item > a,
+	#nav-footer .nav li.current-menu-ancestor > a,
+	#nav-footer .nav li.current-post-parent > a { color: #333; }
+	/* level 2 & 3 */
+	#nav-footer .nav ul { background: #fff; bottom: 55px; top: auto; text-align: left; border-radius: 4px;
+	-webkit-box-shadow: 0 -1px 4px rgba(0,0,0,0.1);
+	box-shadow: 0 -1px 4px rgba(0,0,0,0.1); }
+	#nav-footer .nav ul:before { content:''; display: inline-block; border-left: 8px solid transparent; border-right: 8px solid transparent; border-top: 8px solid #fff; border-bottom: 8px solid transparent; position: absolute; bottom: -16px; left: 20px; } 
+	#nav-footer .nav ul li { border-bottom: 1px solid #f4f4f4; }
+	#nav-footer .nav ul li:last-child { border-bottom: none; }
+	#nav-footer .nav ul li a { font-size: 13px; }
+	/* level 3 */
+	#nav-footer .nav ul ul { position: absolute; top: auto; bottom: -10px; }
+	
+}
+@media only screen and (max-width: 719px) {
+	
+	/* common */
+	#nav-footer .nav { padding-bottom: 20px; }
+	#nav-footer .nav li a { color: #666; border-top: 1px solid #eee; }	
+	/* level 1 */
+	#nav-footer .nav li > a:hover { background: #f4f4f4; color: #333; }
+	#nav-footer .nav li.current_page_item > a, 
+	#nav-footer .nav li.current-menu-item > a,
+	#nav-footer .nav li.current-post-parent > a { background: #f4f4f4; color: #333; }
+	
+}
 
 
 /* ------------------------------------------------------------------------- *

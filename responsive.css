@@ -15,6 +15,9 @@
 	
 	.col-2cr .s1 { margin-left: 0; }
 	.col-2cr .main-inner { background: none; padding-left: 0; }
+	
+	.col-2cl .s1 { margin-right: 0; }
+	.col-2cl .main-inner { background: none; padding-right: 0; }
 }
 
 

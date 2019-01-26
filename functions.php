@@ -499,6 +499,7 @@ if ( ! function_exists( 'boxstyle_body_class' ) ) {
 		if ( has_nav_menu( 'topbar' ) ) { $classes[] = 'topbar-enabled'; }
 		if ( has_nav_menu( 'mobile' ) ) { $classes[] = 'mobile-menu'; }
 		if ( get_theme_mod( 'mobile-sidebar-hide','on' ) != 'on' ) { $classes[] = 'mobile-sidebar-hide'; }
+		if (! ( is_user_logged_in() ) ) { $classes[] = 'logged-out'; }
 		return $classes;
 	}
 	

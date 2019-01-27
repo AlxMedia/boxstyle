@@ -180,6 +180,14 @@ img,
 .post-thumbnail img { -webkit-border-radius: '.esc_attr( get_theme_mod('image-border-radius') ).'px; border-radius: '.esc_attr( get_theme_mod('image-border-radius') ).'px; }
 				'."\n";
 			}
+			// header logo max-height
+			if ( get_theme_mod('logo-max-height','60') != '60' ) {
+				$styles .= '.site-title a img { max-height: '.esc_attr( get_theme_mod('logo-max-height') ).'px; }'."\n";
+			}
+			// comment count color
+			if ( get_theme_mod('color-comment-count','') != '' ) {
+				$styles .= '.post-comments { background-color: '.esc_attr( get_theme_mod('color-comment-count') ).'; }'."\n";
+			}	
 			// header text color
 			if ( get_theme_mod( 'header_textcolor' ) != '' ) {
 				$styles .= '.site-title a, .site-description { color: #'.esc_attr( get_theme_mod( 'header_textcolor' ) ).'; }'."\n";

@@ -641,6 +641,28 @@ Kirki::add_field( 'boxstyle_theme', array(
 	'section'		=> 'styling',
 	'default'		=> '#eeeeee',
 ) );
+// Styling: Header Logo Max-height
+Kirki::add_field( 'boxstyle_theme', array(
+	'type'			=> 'slider',
+	'settings'		=> 'logo-max-height',
+	'label'			=> esc_html__( 'Header Logo Image Max-height', 'boxstyle' ),
+	'description'	=> esc_html__( 'Your logo image should have the double height of this to be high resolution', 'boxstyle' ),
+	'section'		=> 'styling',
+	'default'		=> '60',
+	'choices'     => array(
+		'min'	=> '40',
+		'max'	=> '200',
+		'step'	=> '1',
+	),
+) );
+// Styling: Comment Count Background
+Kirki::add_field( 'boxstyle_theme', array(
+	'type'			=> 'color',
+	'settings'		=> 'color-comment-count',
+	'label'			=> esc_html__( 'Comment Count Background', 'boxstyle' ),
+	'section'		=> 'styling',
+	'default'		=> '',
+) );
 // Styling: Image Border Radius
 Kirki::add_field( 'boxstyle_theme', array(
 	'type'			=> 'slider',

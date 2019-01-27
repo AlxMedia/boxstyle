@@ -1,7 +1,7 @@
 /*
 Theme Name: Boxstyle
 Theme URI: http://alxmedia.se/themes/boxstyle/
-Version: 1.0.4
+Version: 1.0.5
 Description: <a href="http://alxmedia.se/themes/boxstyle/">Boxstyle</a> is a responsive 100% high resolution theme for personal blogs. The feature list is long: Unlimited accent colors, unlimited widget areas, 0-1 sidebars to the left or right that can be uniquely specified for each page or post, 220px fixed width sidebar, 0-4 footer widget columns, almost zero layout images, related posts and post nav, 5 post formats, good SEO, 2 flexible custom widgets, localisation support, social links, logo upload and many more useful admin panel features.
 Author: Alexander Agnarson
 Author URI: http://alxmedia.se
@@ -809,10 +809,10 @@ article > .pad { padding-top: 50px; padding-bottom: 50px; }
 /*  post : grid loop
 /* ------------------------------------ */
 .post-grid {  }
-.post-grid .post-row { padding: 30px 20px 30px 50px; float: left; border-bottom: 1px solid #eee; position: relative; }
+.post-grid .post-row { padding: 30px 20px 30px 50px; float: left; border-bottom: 1px solid #eee; position: relative; display: flex; flex: 1 1 auto; flex-wrap: wrap; }
 .post-grid .post-row:last-child { border: none; margin-bottom: 0; }
 .post-grid .post,
-.post-grid .page { width: 50%; float: left; border: none; }
+.post-grid .page { width: 50%; float: left; }
 .post-grid .post-inner { margin-right: 30px; }
 .post-grid .post-title { font-size: 22px;  }
 .post-grid .entry { font-size: 15px; color: #999; } 
@@ -831,6 +831,7 @@ article > .pad { padding-top: 50px; padding-bottom: 50px; }
 .post-list .format-circle { right: 0; bottom: 0; }
 
 .post-list .post-inner { padding: 30px 0 0 150px; }
+.post-list .post-inner.no-thumbnail { padding-left: 0; }
 .post-list .post-thumbnail { margin-left: -150px; max-width: 120px; margin-bottom: 0; float: left; }
 .post-list .post-thumbnail img { position: relative; border-radius: 10px; }
 .post-list .post-content { position: relative; }

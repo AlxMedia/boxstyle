@@ -176,6 +176,8 @@
 	.front-widgets { padding: 10px 15px 10px 15px; }
 	.post-inner { margin-left: 0; display: block;  }
 	
+	.post-grid .post,
+	.post-grid .page { border-bottom: 1px solid #eee; padding: 20px 0; }
 	.post-grid .post-inner { margin: 15px; }
 	
 	.post-list .post-inner { padding-left: 0; }
@@ -183,7 +185,7 @@
 	.blog .post-list, 
 	.single .post-list, 
 	.archive .post-list, 
-	.search .post-list { padding: 0 15px; }
+	.search .post-list { padding: 0 15px 20px 15px; border-bottom: 1px solid #eee; }
 	.post-list .post-content { width: 100%; text-align: center; }
 	
 	/* sidebar */

@@ -1,23 +1,24 @@
 <?php $format = get_post_format(); ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class('group post-list'); ?>>	
-	<div class="post-inner post-hover">
+	<div class="post-inner post-hover <?php if ( !has_post_thumbnail() ) { ?>no-thumbnail<?php } ?>">
 		
-		<div class="post-thumbnail">
-			<a href="<?php the_permalink(); ?>">
-				<?php if ( has_post_thumbnail() ): ?>
+		<?php if ( has_post_thumbnail() ): ?>
+			<div class="post-thumbnail">
+				<a href="<?php the_permalink(); ?>">
 					<?php the_post_thumbnail('boxstyle-list'); ?>
-				<?php elseif ( get_theme_mod('placeholder') != 'off' ): ?>
-					<img src="<?php echo get_template_directory_uri(); ?>/img/thumb-list.png" alt="<?php the_title_attribute(); ?>" />
-				<?php endif; ?>
-				<?php if ( has_post_format('video') && !is_sticky() ) echo'<span class="thumb-icon"><i class="fa fa-play"></i></span>'; ?>
-				<?php if ( has_post_format('audio') && !is_sticky() ) echo'<span class="thumb-icon"><i class="fa fa-volume-up"></i></span>'; ?>
-				<?php if ( is_sticky() ) echo'<span class="thumb-icon"><i class="fa fa-star"></i></span>'; ?>
-			</a>
-			<?php if ( comments_open() && ( get_theme_mod( 'comment-count', 'on' ) =='on' ) ): ?>
-				<a class="post-comments" href="<?php comments_link(); ?>"><span><i class="fa fa-comments-o"></i><?php comments_number( '0', '1', '%' ); ?></span></a>
-			<?php endif; ?>	
-		</div><!--/.post-thumbnail-->
+					<?php if ( has_post_format('video') && !is_sticky() ) echo'<span class="thumb-icon"><i class="fa fa-play"></i></span>'; ?>
+					<?php if ( has_post_format('audio') && !is_sticky() ) echo'<span class="thumb-icon"><i class="fa fa-volume-up"></i></span>'; ?>
+					<?php if ( is_sticky() ) echo'<span class="thumb-icon"><i class="fa fa-star"></i></span>'; ?>
+					
+					<?php if ( comments_open() && ( get_theme_mod( 'comment-count', 'on' ) =='on' ) ): ?>
+						<a class="post-comments" href="<?php comments_link(); ?>"><span><i class="fa fa-comments-o"></i><?php comments_number( '0', '1', '%' ); ?></span></a>
+					<?php endif; ?>	
+				</a>
+			</div><!--/.post-thumbnail-->
+		<?php else: ?>
+		
+		<?php endif; ?>
 		
 		<div class="post-content">
 

@@ -1,7 +1,7 @@
 /*
 Theme Name: Boxstyle
 Theme URI: http://alxmedia.se/themes/boxstyle/
-Version: 1.0.6
+Version: 1.0.7
 Description: <a href="http://alxmedia.se/themes/boxstyle/">Boxstyle</a> is a responsive 100% high resolution theme for personal blogs. The feature list is long: Unlimited accent colors, unlimited widget areas, 0-1 sidebars to the left or right that can be uniquely specified for each page or post, 220px fixed width sidebar, 0-4 footer widget columns, almost zero layout images, related posts and post nav, 5 post formats, good SEO, 2 flexible custom widgets, localisation support, social links, logo upload and many more useful admin panel features.
 Author: Alexander Agnarson
 Author URI: http://alxmedia.se
@@ -362,8 +362,9 @@ box-shadow: 6px 0 0 rgba(0,0,0,0.04), -6px 0 0 rgba(0,0,0,0.04); }
 .s2 { background: #198cff; width: 80px; z-index: 99; margin-left: -80px; position: absolute; top: 0; bottom: 0; float: left; }
 .main { margin-left: 80px; position: relative; }
 .main-inner { position: relative; }
-.main-inner:before { background: linear-gradient(to bottom, rgba(244,244,244,1) 0%,rgba(0,0,0,0) 100%); content:""; width: 100%; height: 120px; position: absolute; top: 0; left: 0; right: 0; }
-
+.main-inner:before { content:""; width: 100%; height: 120px; position: absolute; top: 0; left: 0; right: 0;
+background: -webkit-linear-gradient(top, rgba(244,244,244,1) 0%,rgba(255,255,255,0) 100%);
+background: linear-gradient(to bottom, rgba(244,244,244,1) 0%,rgba(255,255,255,0) 100%); }
 .s2 .social-links { float: left; margin-top: 20px; width: 100%; }
 .s2 .social-links li { margin: 0 auto; padding: 4px 0; width: 100%; position: relative; }
 .s2 .social-links li:before { content:""; height: 1px; background: rgba(255,255,255,0.2); position: absolute; left: 30px; right: 30px; top: 0; }

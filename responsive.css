@@ -83,6 +83,9 @@
 	.notebox { font-size: 15px; }
 	
 	/* blog */
+	#flexslider-featured.featured .post-inner { background: #333; }
+	#flexslider-featured.featured .post-title { color: #333; background: transparent; font-size: 20px; position: static; box-shadow: none; }
+	
 	.front-widgets { padding: 10px 20px 10px 20px; }
 	.front-widget-col { width: 100%; }
 	.front-widget-inner { margin: 0; }
@@ -173,6 +176,8 @@
 	#nav-header.nav-container { border-top-color: #e5e5e5; }
 	
 	/* blog */
+	#flexslider-featured.featured .post-title { font-size: 16px; }
+	
 	.front-widgets { padding: 10px 15px 10px 15px; }
 	.post-inner { margin-left: 0; display: block;  }
 	

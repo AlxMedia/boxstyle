@@ -142,7 +142,8 @@ a,
 .author-bio .bio-avatar:after,
 .widget_calendar caption,
 .commentlist li.bypostauthor > .comment-body:after,
-.commentlist li.comment-author-admin > .comment-body:after { background-color: '.esc_attr( get_theme_mod('color-1') ).'; }
+.commentlist li.comment-author-admin > .comment-body:after,
+#flexslider-featured .flex-control-nav li a.flex-active { background-color: '.esc_attr( get_theme_mod('color-1') ).'; }
 
 .alx-tabs-nav li.active a,
 .comment-tabs li.active a,
@@ -177,7 +178,9 @@ img,
 #profile-image img,
 .post-list .post-thumbnail img,
 .post-format,
-.post-thumbnail img { -webkit-border-radius: '.esc_attr( get_theme_mod('image-border-radius') ).'px; border-radius: '.esc_attr( get_theme_mod('image-border-radius') ).'px; }
+.post-thumbnail img,
+#flexslider-featured.featured .post-inner { -webkit-border-radius: '.esc_attr( get_theme_mod('image-border-radius') ).'px; border-radius: '.esc_attr( get_theme_mod('image-border-radius') ).'px; }
+#flexslider-featured.featured .post-title { border-radius: 0 0 '.esc_attr( get_theme_mod('image-border-radius') ).'px '.esc_attr( get_theme_mod('image-border-radius') ).'px; }
 				'."\n";
 			}
 			// header logo max-height

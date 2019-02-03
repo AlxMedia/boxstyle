@@ -485,6 +485,25 @@ if ( ! function_exists( 'boxstyle_post_images' ) ) {
 }
 
 
+/*  Get featured post ids
+/* ------------------------------------ */
+if ( ! function_exists( 'boxstyle_get_featured_post_ids' ) ) {
+
+	function boxstyle_get_featured_post_ids() {
+		$args = array(
+			'category'		=> absint( get_theme_mod('featured-category','') ),
+			'numberposts'	=> absint( get_theme_mod('featured-posts-count','3')),
+		);
+		$posts = get_posts($args);
+		if ( !$posts ) return false;
+		foreach ( $posts as $post )
+			$ids[] = $post->ID;
+		return $ids;
+	}
+	
+}
+
+
 /* ------------------------------------------------------------------------- *
  *  Filters
 /* ------------------------------------------------------------------------- */
@@ -579,6 +598,29 @@ add_filter( 'video_embed_html', 'boxstyle_embed_html_jp' );
 /* ------------------------------------------------------------------------- *
  *  Actions
 /* ------------------------------------------------------------------------- */	
+
+/*  Include or exclude featured articles in loop
+/* ------------------------------------ */
+if ( ! function_exists( 'boxstyle_pre_get_posts' ) ) {
+
+	function boxstyle_pre_get_posts( $query ) {
+		// Are we on main query ?
+		if ( !$query->is_main_query() ) return;
+		if ( $query->is_home() ) {
+
+			// Featured posts enabled
+			if ( get_theme_mod('featured-posts-count','3') != '0' ) {
+				// Get featured post ids
+				$featured_post_ids = boxstyle_get_featured_post_ids();
+				// Exclude posts
+				if ( $featured_post_ids && !get_theme_mod('featured-posts-include') )
+					$query->set('post__not_in', $featured_post_ids);
+			}
+		}
+	}
+	
+}
+add_action( 'pre_get_posts', 'boxstyle_pre_get_posts' );
 
 /*  Script for no-js / js class
 /* ------------------------------------ */
@@ -678,6 +720,47 @@ add_action('woocommerce_after_main_content', 'boxstyle_wc_wrapper_end', 10);
 /* ------------------------------------------------------------------------- *
  *  Frontend scripts
 /* ------------------------------------------------------------------------- */	
+
+/*  Flexslider featured
+/* ------------------------------------ */
+if ( ! function_exists( 'boxstyle_flexslider_featured' ) ) {
+	
+	function boxstyle_flexslider_featured() {
+
+		if( is_home() && !is_paged() && ( get_theme_mod('featured-posts-count','3') !='0') ) {
+			
+			$script = '
+			jQuery(document).ready(function(){
+				var firstImage = jQuery("#flexslider-featured").find("img").filter(":first"),
+				   checkforloaded = setInterval(function() {
+					   var image = firstImage.get(0);
+					   if (image.complete || image.readyState == "complete" || image.readyState == 4) {
+						   clearInterval(checkforloaded);
+						   jQuery("#flexslider-featured").flexslider({
+							   animation: "slide",
+								useCSS: false, // Fix iPad flickering issue
+								directionNav: true,
+								controlNav: true,
+								pauseOnHover: true,
+								animationSpeed: 400,
+								smoothHeight: true,
+								touch: false,
+								slideshow: false,
+								slideshowSpeed: 7000,
+						   });
+					   }
+				   }, 20);
+			   });
+			';
+
+			wp_add_inline_script( 'boxstyle-scripts', $script );
+			
+		}
+	}
+	
+}
+add_action( 'wp_enqueue_scripts', 'boxstyle_flexslider_featured' );
+	
 
 /*  Flexslider gallery post format
 /* ------------------------------------ */

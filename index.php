@@ -3,6 +3,7 @@
 <div class="content">
 	
 	<?php get_template_part('inc/page-title'); ?>		
+	<?php get_template_part('inc/featured'); ?>
 	<?php get_template_part('inc/front-widgets-top'); ?>
 			
 	<?php if ( have_posts() ) : ?>

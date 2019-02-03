@@ -135,6 +135,40 @@ Kirki::add_field( 'boxstyle_theme', array(
 		'step'	=> '1',
 	),
 ) );
+// Blog: Featured Posts Include
+Kirki::add_field( 'boxstyle_theme', array(
+	'type'			=> 'checkbox',
+	'settings'		=> 'featured-posts-include',
+	'label'			=> esc_html__( 'Featured Posts', 'boxstyle' ),
+	'description'	=> esc_html__( 'To show featured posts in the slider AND the content below. Usually not recommended.', 'boxstyle' ),
+	'section'		=> 'blog',
+	'default'		=> false,
+) );
+// Blog: Featured Category
+Kirki::add_field( 'boxstyle_theme', array(
+	'type'			=> 'select',
+	'settings'		=> 'featured-category',
+	'label'			=> esc_html__( 'Featured Category', 'boxstyle' ),
+	'description'	=> esc_html__( 'By not selecting a category, it will show your latest post(s) from all categories', 'boxstyle' ),
+	'section'		=> 'blog',
+	'default'		=> '',
+	'choices'		=> Kirki_Helper::get_terms( 'category' ),
+	'placeholder'	=> esc_html__( 'Select a category', 'boxstyle' ),
+) );
+// Blog: Featured Post Count
+Kirki::add_field( 'boxstyle_theme', array(
+	'type'			=> 'slider',
+	'settings'		=> 'featured-posts-count',
+	'label'			=> esc_html__( 'Featured Post Count', 'boxstyle' ),
+	'description'	=> esc_html__( 'Max number of featured posts to display. Set to 1 and it will show it without any slider script. Set it to 0 to disable', 'boxstyle' ),
+	'section'		=> 'blog',
+	'default'		=> '3',
+	'choices'     => array(
+		'min'	=> '0',
+		'max'	=> '10',
+		'step'	=> '1',
+	),
+) );
 // Blog: Frontpage Widgets Top
 Kirki::add_field( 'boxstyle_theme', array(
 	'type'			=> 'switch',

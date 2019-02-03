@@ -762,6 +762,33 @@ box-shadow: 0 0 2px rgba(255,255,255,0.4);
  *  Post Entry
 /* ------------------------------------------------------------------------- */
 
+/*  post : featured
+/* ------------------------------------ */
+#flexslider-featured { padding: 30px 0 30px; border-bottom: 1px solid #f2f2f2; z-index: 9; position: relative; }
+#flexslider-featured .flex-direction-nav { height: 0; }
+#flexslider-featured .flex-direction-nav a { color: #333; background: #eee; }
+#flexslider-featured .flex-direction-nav a:before { color: #333; }
+#flexslider-featured .flex-direction-nav li { margin-left: 0; }
+
+#flexslider-featured .flex-control-nav { position: absolute; bottom: 10px; left: 2px; right: 0; top: auto; text-align: center; }
+#flexslider-featured .flex-control-nav li { padding: 0; margin: 0 4px; }
+#flexslider-featured .flex-control-nav li a { background: #ccc; width: 10px; height: 10px; text-indent: -999px; overflow: hidden;
+-webkit-border-radius: 100%; border-radius: 100%;
+-webkit-box-shadow: none; box-shadow: 0 1px 0 #fff, inset 0 1px 0 rgba(0,0,0,0.2); }
+#flexslider-featured .flex-control-nav li a:hover {  }
+#flexslider-featured .flex-control-nav li a.flex-active { background: #198cff; }
+
+#flexslider-featured.featured,
+#flexslider-featured.featured.flexslider { margin: 0; position: relative; }
+#flexslider-featured.featured .post-inner { border-radius: 10px; }
+#flexslider-featured.featured .post-title { font-size: 26px; border-radius: 0 0 10px 10px; background: rgba(0,0,0,0.4); position: absolute; bottom: 0; left: 0; right: 0; margin-bottom: 0; z-index: 9; padding: 10px 20px 10px 20px; 
+text-shadow: 0 1px 0 rgba(0,0,0,0.7);
+box-shadow: 0 -1px 0 rgba(255,255,255,0.07), inset 0 1px 0 rgba(0,0,0,0.2), inset 0 -1px 0 rgba(0,0,0,0.3), inset 0 10px 10px rgba(0,0,0,0.1); }
+#flexslider-featured.featured .post-title a { color: #fff; }
+#flexslider-featured.featured li .post { padding: 0 50px; }
+#flexslider-featured.featured .post-hover:hover .post-title a { color: #fff; }
+#flexslider-featured.featured .post-comments { top: 7px; right: auto; left: 7px; bottom: auto; }
+
 /*  post : standard loop
 /* ------------------------------------ */
 .blog .post,

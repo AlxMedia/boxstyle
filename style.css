@@ -787,7 +787,8 @@ box-shadow: 0 -1px 0 rgba(255,255,255,0.07), inset 0 1px 0 rgba(0,0,0,0.2), inse
 #flexslider-featured.featured .post-title a { color: #fff; }
 #flexslider-featured.featured li .post { padding: 0 50px; }
 #flexslider-featured.featured .post-hover:hover .post-title a { color: #fff; }
-#flexslider-featured.featured .post-comments { top: 7px; right: auto; left: 7px; bottom: auto; }
+#flexslider-featured.featured .post-comments { top: 14px; right: 14px; left: auto; bottom: auto; }
+#flexslider-featured.featured .post-comments:hover { padding-right: 4px; padding-left: 0; }
 
 /*  post : standard loop
 /* ------------------------------------ */

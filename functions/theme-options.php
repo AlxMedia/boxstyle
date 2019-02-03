@@ -160,9 +160,9 @@ Kirki::add_field( 'boxstyle_theme', array(
 	'type'			=> 'slider',
 	'settings'		=> 'featured-posts-count',
 	'label'			=> esc_html__( 'Featured Post Count', 'boxstyle' ),
-	'description'	=> esc_html__( 'Max number of featured posts to display. Set to 1 and it will show it without any slider script. Set it to 0 to disable', 'boxstyle' ),
+	'description'	=> esc_html__( 'Max number of featured posts to display. Set it to 0 to disable', 'boxstyle' ),
 	'section'		=> 'blog',
-	'default'		=> '3',
+	'default'		=> '0',
 	'choices'     => array(
 		'min'	=> '0',
 		'max'	=> '10',

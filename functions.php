@@ -492,7 +492,7 @@ if ( ! function_exists( 'boxstyle_get_featured_post_ids' ) ) {
 	function boxstyle_get_featured_post_ids() {
 		$args = array(
 			'category'		=> absint( get_theme_mod('featured-category','') ),
-			'numberposts'	=> absint( get_theme_mod('featured-posts-count','3')),
+			'numberposts'	=> absint( get_theme_mod('featured-posts-count','0')),
 		);
 		$posts = get_posts($args);
 		if ( !$posts ) return false;
@@ -609,7 +609,7 @@ if ( ! function_exists( 'boxstyle_pre_get_posts' ) ) {
 		if ( $query->is_home() ) {
 
 			// Featured posts enabled
-			if ( get_theme_mod('featured-posts-count','3') != '0' ) {
+			if ( get_theme_mod('featured-posts-count','0') != '0' ) {
 				// Get featured post ids
 				$featured_post_ids = boxstyle_get_featured_post_ids();
 				// Exclude posts
@@ -727,7 +727,7 @@ if ( ! function_exists( 'boxstyle_flexslider_featured' ) ) {
 	
 	function boxstyle_flexslider_featured() {
 
-		if( is_home() && !is_paged() && ( get_theme_mod('featured-posts-count','3') !='0') ) {
+		if( is_home() && !is_paged() && ( get_theme_mod('featured-posts-count','0') !='0') ) {
 			
 			$script = '
 			jQuery(document).ready(function(){

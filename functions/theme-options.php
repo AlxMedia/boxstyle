@@ -614,7 +614,7 @@ Kirki::add_field( 'boxstyle_theme', array(
 Kirki::add_field( 'boxstyle_theme', array(
 	'type'			=> 'switch',
 	'settings'		=> 'dark',
-	'label'			=> esc_html__( 'Dark Style', 'boxstyle' ),
+	'label'			=> esc_html__( 'Dark Theme', 'boxstyle' ),
 	'description'	=> esc_html__( 'Use dark instead of light base', 'boxstyle' ),
 	'section'		=> 'styling',
 	'default'		=> 'off',

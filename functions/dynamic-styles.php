@@ -167,7 +167,7 @@ a,
 			}
 			// background color
 			if ( get_theme_mod('color-background','#eeeeee') != '#eeeeee' ) {
-				$styles .= 'body { background-color: '.esc_attr( get_theme_mod('color-background') ).'; }'."\n";
+				$styles .= 'body { background-color: '.esc_attr( get_theme_mod('color-background') ).'!important; }'."\n";
 			}
 			// image border radius
 			if ( get_theme_mod('image-border-radius') != '10' ) {

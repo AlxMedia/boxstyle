@@ -200,6 +200,7 @@ if ( ! function_exists( 'boxstyle_styles' ) ) {
 	function boxstyle_styles() {
 		wp_enqueue_style( 'boxstyle-style', get_stylesheet_uri() );
 		if ( get_theme_mod('responsive','on') =='on' ) { wp_enqueue_style( 'boxstyle-responsive', get_template_directory_uri().'/responsive.css' ); }
+		if ( get_theme_mod('dark','off') == 'on' ) { wp_enqueue_style( 'boxstyle-dark', get_template_directory_uri().'/dark.css' ); }
 		wp_enqueue_style( 'boxstyle-font-awesome', get_template_directory_uri().'/fonts/font-awesome.min.css' );
 	}
 	

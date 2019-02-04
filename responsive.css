@@ -14,10 +14,10 @@
 	.s1 .sidebar-content { width: 100%; }
 	
 	.col-2cr .s1 { margin-left: 0; }
-	.col-2cr .main-inner { background: none; padding-left: 0; }
+	.col-2cr .main-inner { background: none!important; padding-left: 0; }
 	
 	.col-2cl .s1 { margin-right: 0; }
-	.col-2cl .main-inner { background: none; padding-right: 0; }
+	.col-2cl .main-inner { background: none!important; padding-right: 0; }
 }
 
 
@@ -56,7 +56,7 @@
 	/* header */
 	#header,
 	#header .pad { padding-top: 0; padding-bottom: 0; }
-	.site-title { padding: 20px 0; margin: 0; width: 100%; float: none; line-height: 50px; border-bottom: 1px solid rgba(255,255,255,0.1); }
+	.site-title { padding: 20px 0; margin: 0; width: 100%; float: none; line-height: 50px; }
 	.site-title a { text-align: center; }
 	#nav-mobile.nav-container,
 	#nav-header.nav-container,

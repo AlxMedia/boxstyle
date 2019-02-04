@@ -1,7 +1,7 @@
 /*
 Theme Name: Boxstyle
 Theme URI: http://alxmedia.se/themes/boxstyle/
-Version: 1.0.8
+Version: 1.0.9
 Description: <a href="http://alxmedia.se/themes/boxstyle/">Boxstyle</a> is a responsive 100% high resolution theme for personal blogs. The feature list is long: Unlimited accent colors, unlimited widget areas, 0-1 sidebars to the left or right that can be uniquely specified for each page or post, 220px fixed width sidebar, 0-4 footer widget columns, almost zero layout images, related posts and post nav, 5 post formats, good SEO, 2 flexible custom widgets, localisation support, social links, logo upload and many more useful admin panel features.
 Author: Alexander Agnarson
 Author URI: http://alxmedia.se
@@ -773,8 +773,7 @@ box-shadow: 0 0 2px rgba(255,255,255,0.4);
 #flexslider-featured .flex-control-nav { position: absolute; bottom: 10px; left: 2px; right: 0; top: auto; text-align: center; }
 #flexslider-featured .flex-control-nav li { padding: 0; margin: 0 4px; }
 #flexslider-featured .flex-control-nav li a { background: #ccc; width: 10px; height: 10px; text-indent: -999px; overflow: hidden;
--webkit-border-radius: 100%; border-radius: 100%;
--webkit-box-shadow: none; box-shadow: 0 1px 0 #fff, inset 0 1px 0 rgba(0,0,0,0.2); }
+-webkit-border-radius: 100%; border-radius: 100%; }
 #flexslider-featured .flex-control-nav li a:hover {  }
 #flexslider-featured .flex-control-nav li a.flex-active { background: #198cff; }
 

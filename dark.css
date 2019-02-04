@@ -1,6 +1,8 @@
 body { background: #111; }
 .main { background: #222!important; }
 
+.site-title a,
+.site-title a:hover,
 #profile-name,
 h1, h2, h3, h4, h5, h6,
 .page-title h1, 

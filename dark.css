@@ -218,7 +218,11 @@ background: linear-gradient(to bottom, rgba(26,26,26,1) 0%,rgba(0,0,0,0) 100%); 
 }	
 @media only screen and (max-width: 479px) {
 	.post-grid .post,
-	.post-grid .page { border-bottom: 1px solid #2d2d2d; }
+	.post-grid .page,
+	.blog .post-list, 
+	.single .post-list, 
+	.archive .post-list, 
+	.search .post-list { border-bottom: 1px solid #2d2d2d; }
 }
 
 .child-menu a { color: #999; }

@@ -1,6 +1,7 @@
 body { background: #111; }
 .main { background: #222!important; }
 
+.entry dt,
 .site-title a,
 .site-title a:hover,
 #profile-name,
@@ -19,7 +20,9 @@ h1, h2, h3, h4, h5, h6,
 #footer-bottom a:hover,
 .widget a:hover,
 .widget > h3 a,
-.widget > h3 a:hover { color: rgba(255,255,255,1);  }
+.widget > h3 a:hover,
+.commentlist .fn, 
+.pinglist .ping-link { color: rgba(255,255,255,1);  }
 
 body,
 .entry blockquote,
@@ -31,7 +34,8 @@ body,
 #footer-bottom .social-links a,
 #footer-bottom a,
 #flexslider-featured .flex-direction-nav a:before,
-.widget_rss ul li span.rss-date { color: rgba(255,255,255,0.7); }
+.widget_rss ul li span.rss-date,
+.themeform label { color: rgba(255,255,255,0.7); }
 
 a:hover,
 #profile-description,
@@ -43,7 +47,8 @@ a:hover,
 #footer-bottom #credit,
 .notebox,
 .widget,
-.widget a { color: rgba(255,255,255,0.5); }
+.widget a,
+.commentlist .comment-body p { color: rgba(255,255,255,0.5); }
 
 .post-date,
 .alx-tab .tab-item-date, 
@@ -62,7 +67,11 @@ a:hover,
 .widget_links ul li,
 .widget_recent_comments ul li,
 .widget_recent_entries ul li,
-.format-circle .fa:before { color: rgba(255,255,255,0.3); }
+.format-circle .fa:before,
+.commentlist .comment-meta a, 
+.pinglist .ping-meta,
+.commentlist .comment-meta:before, 
+.pinglist .ping-meta:before { color: rgba(255,255,255,0.3); }
 
 .post-grid .post-row,
 .post-standard,
@@ -148,13 +157,24 @@ background: linear-gradient(to bottom, rgba(26,26,26,1) 0%,rgba(0,0,0,0) 100%); 
 .col-2cl .main-inner { background-image: url(img/dark/sidebar/s-right.png); }
 .col-2cr .main-inner { background-image: url(img/dark/sidebar/s-left.png); }
 
+.comment-tabs,
+.comment-tabs li a { border-bottom-color: #2d2d2d; }
+.comment-tabs li a:hover { color: #fff; border-bottom-color: #444; }
+.comment-tabs li span { background-color: #1a1a1a; }
+
 #footer-widgets { border-color: #222; }
 
 #footer,
 .author-bio,
 .sharrre .count,
 .format-circle,
-#commentform { background: #1a1a1a; }
+#commentform,
+.entry code,
+.post-tags a,
+.entry .wp-caption { background: #1a1a1a; }
+
+.entry ins,
+hr { background: #333; }
 
 .search-expand .themeform input { background: #1a1a1a; border-color: #333; }
 .search-expand .themeform input:focus { border-color: #444; color: #999; }

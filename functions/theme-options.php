@@ -610,6 +610,15 @@ Kirki::add_field( 'boxstyle_theme', array(
 	'section'		=> 'styling',
 	'default'		=> 'on',
 ) );
+// Styling: Switch
+Kirki::add_field( 'boxstyle_theme', array(
+	'type'			=> 'switch',
+	'settings'		=> 'light-dark-switch',
+	'label'			=> esc_html__( 'Light/Dark Theme Switch', 'boxstyle' ),
+	'description'	=> esc_html__( 'Do not use with Dark Theme option enabled', 'boxstyle' ),
+	'section'		=> 'styling',
+	'default'		=> 'off',
+) );
 // Styling: Dark
 Kirki::add_field( 'boxstyle_theme', array(
 	'type'			=> 'switch',

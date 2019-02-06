@@ -208,6 +208,32 @@ if ( ! function_exists( 'boxstyle_styles' ) ) {
 add_action( 'wp_enqueue_scripts', 'boxstyle_styles' );
 
 
+/*  Light & dark mode switch
+/* ------------------------------------ */
+function boxstyle_switch() {
+
+	if ( get_theme_mod('light-dark-switch','off') =='on' ) { 
+	
+		$current_mode = 'light';
+		if ( isset( $_COOKIE['theme_mode'] ) && ! empty( $_COOKIE['theme_mode'] ) ) {
+			$current_mode = $_COOKIE['theme_mode'];
+		}
+		if ( in_array( $current_mode, array( 'light', 'dark' ) ) ) {
+			wp_enqueue_style( 'boxstyle-scheme', get_template_directory_uri() . '/' . esc_attr( $current_mode ) . '.css' );
+		}
+		wp_enqueue_script( 'boxstyle-cookie', get_template_directory_uri() . '/js/cookie.min.js', array(), '2.2.0', true );
+		wp_enqueue_script( 'boxstyle-switch', get_template_directory_uri() . '/js/switch.js', array( 'jquery' ), '2.0', true );
+		$data = array(
+			'template_directory_uri'   => get_template_directory_uri(),
+			'stylesheet_directory_uri' => get_stylesheet_directory_uri(),
+			);
+		wp_localize_script( 'boxstyle-switch', 'boxstyleObject', $data );
+		
+	}
+}
+add_action( 'wp_enqueue_scripts', 'boxstyle_switch' );
+
+
 /* ------------------------------------------------------------------------- *
  *  Template functions
 /* ------------------------------------------------------------------------- */	

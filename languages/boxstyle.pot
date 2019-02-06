@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Boxstyle\n"
-"POT-Creation-Date: 2019-02-06 11:05+0100\n"
+"POT-Creation-Date: 2019-02-06 13:12+0100\n"
 "PO-Revision-Date: 2018-09-21 21:27+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -133,23 +133,23 @@ msgstr ""
 msgid "Footer 4"
 msgstr ""
 
-#: functions.php:678
+#: functions.php:704
 msgid "Alx Extensions"
 msgstr ""
 
-#: functions.php:682
+#: functions.php:708
 msgid "Meta Box"
 msgstr ""
 
-#: functions.php:686
+#: functions.php:712
 msgid "Regenerate Thumbnails"
 msgstr ""
 
-#: functions.php:690
+#: functions.php:716
 msgid "WP-PageNavi"
 msgstr ""
 
-#: functions.php:694
+#: functions.php:720
 msgid "Responsive Lightbox"
 msgstr ""
 
@@ -614,156 +614,168 @@ msgid "Turn on to use the styling options below"
 msgstr ""
 
 #: functions/theme-options.php:617
-msgid "Dark Theme"
+msgid "Light/Dark Theme Switch"
 msgstr ""
 
 #: functions/theme-options.php:618
-msgid "Use dark instead of light base"
+msgid "Do not use with Dark Theme option enabled"
 msgstr ""
 
 #: functions/theme-options.php:626
-msgid "Font"
+msgid "Dark Theme"
 msgstr ""
 
 #: functions/theme-options.php:627
-msgid "Select font for the theme"
-msgstr ""
-
-#: functions/theme-options.php:631
-msgid "Titillium Web, Latin (Self-hosted)"
-msgstr ""
-
-#: functions/theme-options.php:632
-msgid "Titillium Web, Latin-Ext"
-msgstr ""
-
-#: functions/theme-options.php:633
-msgid "Droid Serif, Latin"
-msgstr ""
-
-#: functions/theme-options.php:634
-msgid "Source Sans Pro, Latin-Ext"
+msgid "Use dark instead of light base"
 msgstr ""
 
 #: functions/theme-options.php:635
-msgid "Lato, Latin"
+msgid "Font"
 msgstr ""
 
 #: functions/theme-options.php:636
-msgid "Raleway, Latin"
-msgstr ""
-
-#: functions/theme-options.php:637
-msgid "Ubuntu, Latin-Ext"
-msgstr ""
-
-#: functions/theme-options.php:638
-msgid "Ubuntu, Latin / Cyrillic-Ext"
-msgstr ""
-
-#: functions/theme-options.php:639
-msgid "Roboto, Latin-Ext"
+msgid "Select font for the theme"
 msgstr ""
 
 #: functions/theme-options.php:640
-msgid "Roboto, Latin / Cyrillic-Ext"
+msgid "Titillium Web, Latin (Self-hosted)"
 msgstr ""
 
 #: functions/theme-options.php:641
-msgid "Roboto Condensed, Latin-Ext"
+msgid "Titillium Web, Latin-Ext"
 msgstr ""
 
 #: functions/theme-options.php:642
-msgid "Roboto Condensed, Latin / Cyrillic-Ext"
+msgid "Droid Serif, Latin"
 msgstr ""
 
 #: functions/theme-options.php:643
-msgid "Roboto Slab, Latin-Ext"
+msgid "Source Sans Pro, Latin-Ext"
 msgstr ""
 
 #: functions/theme-options.php:644
-msgid "Roboto Slab, Latin / Cyrillic-Ext"
+msgid "Lato, Latin"
 msgstr ""
 
 #: functions/theme-options.php:645
-msgid "Playfair Display, Latin-Ext"
+msgid "Raleway, Latin"
 msgstr ""
 
 #: functions/theme-options.php:646
-msgid "Playfair Display, Latin / Cyrillic"
+msgid "Ubuntu, Latin-Ext"
 msgstr ""
 
 #: functions/theme-options.php:647
-msgid "Open Sans, Latin-Ext"
+msgid "Ubuntu, Latin / Cyrillic-Ext"
 msgstr ""
 
 #: functions/theme-options.php:648
-msgid "Open Sans, Latin / Cyrillic-Ext"
+msgid "Roboto, Latin-Ext"
 msgstr ""
 
 #: functions/theme-options.php:649
-msgid "PT Serif, Latin-Ext"
+msgid "Roboto, Latin / Cyrillic-Ext"
 msgstr ""
 
 #: functions/theme-options.php:650
-msgid "PT Serif, Latin / Cyrillic-Ext"
+msgid "Roboto Condensed, Latin-Ext"
 msgstr ""
 
 #: functions/theme-options.php:651
-msgid "Arial"
+msgid "Roboto Condensed, Latin / Cyrillic-Ext"
 msgstr ""
 
 #: functions/theme-options.php:652
-msgid "Georgia"
+msgid "Roboto Slab, Latin-Ext"
 msgstr ""
 
 #: functions/theme-options.php:653
-msgid "Verdana"
+msgid "Roboto Slab, Latin / Cyrillic-Ext"
 msgstr ""
 
 #: functions/theme-options.php:654
-msgid "Tahoma"
+msgid "Playfair Display, Latin-Ext"
+msgstr ""
+
+#: functions/theme-options.php:655
+msgid "Playfair Display, Latin / Cyrillic"
+msgstr ""
+
+#: functions/theme-options.php:656
+msgid "Open Sans, Latin-Ext"
+msgstr ""
+
+#: functions/theme-options.php:657
+msgid "Open Sans, Latin / Cyrillic-Ext"
+msgstr ""
+
+#: functions/theme-options.php:658
+msgid "PT Serif, Latin-Ext"
+msgstr ""
+
+#: functions/theme-options.php:659
+msgid "PT Serif, Latin / Cyrillic-Ext"
+msgstr ""
+
+#: functions/theme-options.php:660
+msgid "Arial"
 msgstr ""
 
 #: functions/theme-options.php:661
-msgid "Website Max-width"
+msgid "Georgia"
 msgstr ""
 
 #: functions/theme-options.php:662
+msgid "Verdana"
+msgstr ""
+
+#: functions/theme-options.php:663
+msgid "Tahoma"
+msgstr ""
+
+#: functions/theme-options.php:670
+msgid "Website Max-width"
+msgstr ""
+
+#: functions/theme-options.php:671
 msgid "Max-width of the container"
 msgstr ""
 
-#: functions/theme-options.php:675
+#: functions/theme-options.php:684
 msgid "Primary Color"
 msgstr ""
 
-#: functions/theme-options.php:683
+#: functions/theme-options.php:692
 msgid "Background Color"
 msgstr ""
 
-#: functions/theme-options.php:691
+#: functions/theme-options.php:700
 msgid "Header Logo Image Max-height"
 msgstr ""
 
-#: functions/theme-options.php:692
+#: functions/theme-options.php:701
 msgid ""
 "Your logo image should have the double height of this to be high resolution"
 msgstr ""
 
-#: functions/theme-options.php:705
+#: functions/theme-options.php:714
 msgid "Comment Count Background"
 msgstr ""
 
-#: functions/theme-options.php:713
+#: functions/theme-options.php:722
 msgid "Image Border Radius"
 msgstr ""
 
-#: functions/theme-options.php:714
+#: functions/theme-options.php:723
 msgid "Give your thumbnails and layout images rounded corners"
 msgstr ""
 
-#: functions/theme-options.php:727
+#: functions/theme-options.php:736
 msgid "Wave Style"
+msgstr ""
+
+#: header.php:94
+msgid "Switch color"
 msgstr ""
 
 #: inc/page-title.php:24

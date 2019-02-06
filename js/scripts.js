@@ -20,6 +20,12 @@ jQuery(document).ready(function($) {
                 $('.search-expand input').focus();
             }, 300);
 	});
+
+/*  Toggle switch
+/* ------------------------------------ */
+	$('#btn-mode').on('click', function() {
+		$('body').toggleClass('dark-mode');
+	});
 	
 /*  Scroll to top
 /* ------------------------------------ */

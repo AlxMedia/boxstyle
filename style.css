@@ -330,6 +330,14 @@ h1, h2, h3, h4, h5, h6 { color: #333; font-weight: 600; -ms-word-wrap: break-wor
 .pad { padding: 30px 50px; }
 .pad-top { border-bottom: 1px solid #eee; }
 
+#btn-mode { background: rgba(255,255,255,0.15); position: relative; color: #fff; text-align: center; display: block; padding: 38px 0; font-size: 24px;
+box-shadow: inset 0 1px 0 rgba(255,255,255,0.1), inset 0 -1px 0 rgba(255,255,255,0.1), 0 1px 0 rgba(0,0,0,0.1);  }
+.dark-mode #btn-mode .fa:before { content: "\f205"; }
+
+#btn-mode:hover:after { top: 35px; background: #333; font-size: 14px; color: #fff; content: attr(title); display: block; left: 60px; padding: 4px 10px; position: absolute; white-space: nowrap; 
+-webkit-border-radius: 3px; border-radius: 3px; }
+#btn-mode:hover:before { top: 45px; left: 55px; border-color: transparent #333; border-width: 5px 5px 5px 0; border-style: solid; content: ""; display: block; position: absolute; z-index: 1; }
+
 /* boxed */
 .boxed #wrapper { max-width: 1380px; margin: 0 auto;
 -webkit-box-shadow: 6px 0 0 rgba(0,0,0,0.04), -6px 0 0 rgba(0,0,0,0.04);

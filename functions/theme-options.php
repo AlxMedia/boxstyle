@@ -720,3 +720,11 @@ Kirki::add_field( 'boxstyle_theme', array(
 		'step'	=> '1',
 	),
 ) );
+// Styling: Wave
+Kirki::add_field( 'boxstyle_theme', array(
+	'type'			=> 'switch',
+	'settings'		=> 'wave-style',
+	'label'			=> esc_html__( 'Wave Style', 'boxstyle' ),
+	'section'		=> 'styling',
+	'default'		=> 'on',
+) );

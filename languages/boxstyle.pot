@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Boxstyle\n"
-"POT-Creation-Date: 2019-02-04 21:35+0100\n"
+"POT-Creation-Date: 2019-02-06 11:05+0100\n"
 "PO-Revision-Date: 2018-09-21 21:27+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -133,23 +133,23 @@ msgstr ""
 msgid "Footer 4"
 msgstr ""
 
-#: functions.php:677
+#: functions.php:678
 msgid "Alx Extensions"
 msgstr ""
 
-#: functions.php:681
+#: functions.php:682
 msgid "Meta Box"
 msgstr ""
 
-#: functions.php:685
+#: functions.php:686
 msgid "Regenerate Thumbnails"
 msgstr ""
 
-#: functions.php:689
+#: functions.php:690
 msgid "WP-PageNavi"
 msgstr ""
 
-#: functions.php:693
+#: functions.php:694
 msgid "Responsive Lightbox"
 msgstr ""
 
@@ -760,6 +760,10 @@ msgstr ""
 
 #: functions/theme-options.php:714
 msgid "Give your thumbnails and layout images rounded corners"
+msgstr ""
+
+#: functions/theme-options.php:727
+msgid "Wave Style"
 msgstr ""
 
 #: inc/page-title.php:24

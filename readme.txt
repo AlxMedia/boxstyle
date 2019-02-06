@@ -9,7 +9,7 @@ Tags: blog, one-column, two-columns, right-sidebar, left-sidebar, custom-colors,
 
 == Description ==
 
-Boxstyle is a responsive 100% high resolution theme for personal blogs. The feature list is long: Unlimited accent colors, unlimited widget areas, 0-1 sidebars to the left or right that can be uniquely specified for each page or post, 220px fixed width sidebar, 0-4 footer widget columns, almost zero layout images, related posts and post nav, 5 post formats, good SEO, 2 flexible custom widgets, localisation support, social links, logo upload and many more useful admin panel features.
+Boxstyle is a flexible personal blog theme with plenty of options. Optimized for all devices, this theme will stand out with a unique colorful left bar with social links and a header profile image, name and description. It includes a featured posts slider, a day and night mode switch and three different blog layouts: standard, grid and list. Set the theme to any width and accent color you wish. Disable or enable the wave style. Use a sidebar to the left or right, or disable it entirely - it is all up to you.
 
 == Installation ==
 

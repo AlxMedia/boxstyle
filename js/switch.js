@@ -1,7 +1,11 @@
 ( function( $ ) {
 
 	$(document).ready(function($){
-
+		
+		$('#btn-mode').on('click', function() {
+			$('body').toggleClass('dark-mode');
+		});
+			
 		var mode = Cookies.get( 'theme_mode' );
 
 		if ( ! mode ) {

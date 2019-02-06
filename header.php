@@ -91,7 +91,7 @@
 						
 				<div class="sidebar s2">
 					<?php if ( get_theme_mod('light-dark-switch','off') =='on' ): ?>
-						<a href="#" id="btn-mode" title="<?php esc_html_e('Switch color','boxstyle'); ?>"><i class="fa fa-toggle-off"></i></a>
+						<a href="#" id="btn-mode" title="<?php esc_html_e('Switch Color','boxstyle'); ?>"><i class="fa fa-toggle-off"></i></a>
 					<?php endif; ?>
 					<?php if ( get_theme_mod( 'header-social', 'on' ) == 'on' ): ?>
 						<?php boxstyle_social_links() ; ?>

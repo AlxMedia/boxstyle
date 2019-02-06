@@ -21,12 +21,6 @@ jQuery(document).ready(function($) {
             }, 300);
 	});
 
-/*  Toggle switch
-/* ------------------------------------ */
-	$('#btn-mode').on('click', function() {
-		$('body').toggleClass('dark-mode');
-	});
-	
 /*  Scroll to top
 /* ------------------------------------ */
 	$('a#back-to-top').on('click', function() {

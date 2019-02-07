@@ -1,7 +1,7 @@
 /*
 Theme Name: Boxstyle
 Theme URI: http://alxmedia.se/themes/boxstyle/
-Version: 1.1.2
+Version: 1.1.3
 Description: <a href="http://alxmedia.se/themes/boxstyle/">Boxstyle</a> is a flexible personal blog theme with plenty of options. Optimized for all devices, this theme will stand out with a unique colorful left bar with social links and a header profile image, name and description. It includes a featured posts slider, a day and night mode switch and three different blog layouts: standard, grid and list. Set the theme to any width and accent color you wish. Disable or enable the wave style. Use a sidebar to the left or right, or disable it entirely - it is all up to you.
 Author: Alexander Agnarson
 Author URI: http://alxmedia.se
@@ -613,7 +613,7 @@ box-shadow: 0 0 2px rgba(255,255,255,0.4);
 	
 	/* common */
 	#nav-mobile .nav-wrap { background: #fff; }
-	#nav-mobile .nav { padding: 0 0 20px; }
+	#nav-mobile .nav { padding: 0 0 50px; }
 	#nav-mobile .nav li a { color: #333; border-bottom: 1px solid #f4f4f4; }	
 	/* level 1 */
 	#nav-mobile .nav li > a:hover,

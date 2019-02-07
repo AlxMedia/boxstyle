@@ -546,15 +546,18 @@ if ( ! function_exists( 'boxstyle_body_class' ) ) {
 	function boxstyle_body_class( $classes ) {
 		$classes[] = boxstyle_layout_class();
 		
-		// Scheme class.
-		$current_mode = 'light';
-		if ( isset( $_COOKIE['theme_mode'] ) && ! empty( $_COOKIE['theme_mode'] ) ) {
-			$current_mode = $_COOKIE['theme_mode'];
+		if ( get_theme_mod('light-dark-switch','off') =='on' ) {
+			
+			// Scheme class.
+			$current_mode = 'light';
+			if ( isset( $_COOKIE['theme_mode'] ) && ! empty( $_COOKIE['theme_mode'] ) ) {
+				$current_mode = $_COOKIE['theme_mode'];
+			}
+			if ( 'dark' === $current_mode ) {
+				$classes[] = 'dark-mode';
+			}
+			
 		}
-		if ( 'dark' === $current_mode ) {
-			$classes[] = 'dark-mode';
-		}
-		
 		if ( get_theme_mod( 'boxed','off' ) != 'on' ) { $classes[] = 'full-width'; }
 		if ( get_theme_mod( 'boxed','off' ) == 'on' ) { $classes[] = 'boxed'; }
 		if ( has_nav_menu( 'topbar' ) ) { $classes[] = 'topbar-enabled'; }

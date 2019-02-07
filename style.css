@@ -613,7 +613,7 @@ box-shadow: 0 0 2px rgba(255,255,255,0.4);
 	
 	/* common */
 	#nav-mobile .nav-wrap { background: #fff; }
-	#nav-mobile .nav { padding: 0 0 50px; }
+	#nav-mobile .nav { padding: 0 0 20px; }
 	#nav-mobile .nav li a { color: #333; border-bottom: 1px solid #f4f4f4; }	
 	/* level 1 */
 	#nav-mobile .nav li > a:hover,

@@ -164,6 +164,7 @@
 	.social-links .social-tooltip:hover:after,
 	.social-links .social-tooltip:hover:before { display: none; }
 	
+	#nav-mobile .nav,
 	#nav-header .nav { padding-bottom: 50px; }
 	#btn-mode { background: transparent; box-shadow: none; -webkit-box-shadow: none; color: #999; position: absolute; bottom: 66px; right: 54px; padding: 10px; margin-bottom: 2px; }
 	#btn-mode:hover:before,

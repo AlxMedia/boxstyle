@@ -542,6 +542,7 @@ if ( ! function_exists( 'boxstyle_get_featured_post_ids' ) ) {
 /*  Body class
 /* ------------------------------------ */
 if ( ! function_exists( 'boxstyle_body_class' ) ) {
+	
 	function boxstyle_body_class( $classes ) {
 		$classes[] = boxstyle_layout_class();
 		
@@ -563,6 +564,7 @@ if ( ! function_exists( 'boxstyle_body_class' ) ) {
 		if (! ( is_user_logged_in() ) ) { $classes[] = 'logged-out'; }
 		return $classes;
 	}
+	
 }
 add_filter( 'body_class', 'boxstyle_body_class' );
 

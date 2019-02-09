@@ -2,7 +2,7 @@
 Contributors: alxmedia
 Requires at least: 5.0
 Tested up to: 5.0
-Version: 1.1.3
+Version: 1.1.4
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0
 Tags: blog, one-column, two-columns, right-sidebar, left-sidebar, custom-colors, custom-menu, featured-images, flexible-header, full-width-template, post-formats, sticky-post, theme-options, threaded-comments, translation-ready, custom-logo, custom-header, custom-background
@@ -80,6 +80,9 @@ Sidebar images
 3. https://stocksnap.io/photo/Y01VDYAX63 - CC0 1.0 Universal (CC0 1.0)
 
 == Changelog ==
+
+= 1.1.4 - 2019-02-09 =
+* Fix safari header gradient issue
 
 = 1.1.3 - 2019-02-07 =
 * Fix minor styling issues for dark mode

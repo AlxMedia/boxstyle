@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Boxstyle\n"
-"POT-Creation-Date: 2019-02-07 12:24+0100\n"
+"POT-Creation-Date: 2019-02-15 14:10+0100\n"
 "PO-Revision-Date: 2018-09-21 21:27+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -133,23 +133,23 @@ msgstr ""
 msgid "Footer 4"
 msgstr ""
 
-#: functions.php:716
+#: functions.php:720
 msgid "Alx Extensions"
 msgstr ""
 
-#: functions.php:720
+#: functions.php:724
 msgid "Meta Box"
 msgstr ""
 
-#: functions.php:724
+#: functions.php:728
 msgid "Regenerate Thumbnails"
 msgstr ""
 
-#: functions.php:728
+#: functions.php:732
 msgid "WP-PageNavi"
 msgstr ""
 
-#: functions.php:732
+#: functions.php:736
 msgid "Responsive Lightbox"
 msgstr ""
 

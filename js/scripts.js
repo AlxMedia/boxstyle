@@ -122,18 +122,6 @@ jQuery(document).ready(function($) {
 		
 	responsiveVideo();
 	
-/*  Owl Carousel
-/* ------------------------------------ */
-	$("#owl-featured").owlCarousel({
-		navigation : true,
-		items : 5,
-		itemsDesktop : [1024,2],
-		itemsDesktopSmall : [980,2],
-		itemsTablet: [768,3],
-		itemsTabletSmall: [568,2],
-		itemsMobile : [479,1],
-	});
-
 /*  Header Sticky
 /* ------------------------------------ */	
 	$('.logged-out #header-sticky').stickThis({

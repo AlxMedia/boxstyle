@@ -2,7 +2,7 @@
 Contributors: alxmedia
 Requires at least: 5.0
 Tested up to: 5.0
-Version: 1.1.4
+Version: 1.1.5
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0
 Tags: blog, one-column, two-columns, right-sidebar, left-sidebar, custom-colors, custom-menu, featured-images, flexible-header, full-width-template, post-formats, sticky-post, theme-options, threaded-comments, translation-ready, custom-logo, custom-header, custom-background
@@ -81,51 +81,57 @@ Sidebar images
 
 == Changelog ==
 
+= 1.1.5 - 2019-02-17 =
+* Updated to Kirki 3.0.36
+* Updated language file
+* Added customizer link to AlxMedia
+* Added customizer link to Theme Reviews
+
 = 1.1.4 - 2019-02-09 =
-* Fix safari header gradient issue
+* Fixed safari header gradient issue
 
 = 1.1.3 - 2019-02-07 =
-* Fix minor styling issues for dark mode
+* Fixed minor styling issues for dark mode
 
 = 1.1.2 - 2019-02-06 =
-* Add a styling option to enable light/dark theme mode switch - special thanks to Nilambar Sharma
+* Added a styling option to enable light/dark theme mode switch - special thanks to Nilambar Sharma
 
 = 1.1.1 - 2019-02-06 =
-* Add a styling option to disable the wave layout style
+* Added a styling option to disable the wave layout style
 
 = 1.1.0 - 2019-02-05 =
-* Fix missing dark theme elements
+* Fixed missing dark theme elements
 
 = 1.0.9 - 2019-02-04 =
-* Add a dark theme styling option
+* Added a dark theme styling option
 
 = 1.0.8 - 2019-02-03 =
-* Add a featured slider area with theme options to blog home
+* Added a featured slider area with theme options to blog home
 
 = 1.0.7 - 2019-01-31 =
-* Fix Safari/iOS gradient issue
+* Fixed Safari/iOS gradient issue
 
 = 1.0.6 - 2019-01-28 =
-* Fix css issue with social link bubbles behind footer menu
+* Fixed css issue with social link bubbles behind footer menu
 
 = 1.0.5 - 2019-01-27 =
-* Remove placeholder thumbnail images in main post list and grid - it now works without any
-* Fix markup bug in content-grid
+* Removed placeholder thumbnail images in main post list and grid - it now works without any
+* Fixed markup bug in content-grid
 * Minor responsive styling fixes
 
 = 1.0.4 - 2019-01-27 =
-* Fix site description margin
-* Add max-height styling option for header logo
-* Add thumbnail comment count background styling option
+* Fixed site description margin
+* Added max-height styling option for header logo
+* Added thumbnail comment count background styling option
 
 = 1.0.3 - 2019-01-26 =
-* Add a footer menu area
+* Added a footer menu area
 
 = 1.0.2 - 2019-01-26 =
-* Fix sticky header for logged out users
+* Fixed sticky header for logged out users
 
 = 1.0.1 - 2019-01-26 =
-* Fix right sidebar option responsive issues
+* Fixed right sidebar option responsive issues
 
 = 1.0.0 - 2019-01-25 =
 * Initial release

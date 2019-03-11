@@ -20,7 +20,7 @@ Boxstyle is a flexible personal blog theme with plenty of options. Optimized for
 
 == Documentation ==
 
-http://alxmedia.se/documentation/
+http://alx.media/documentation/
 
 == Copyright ==
 

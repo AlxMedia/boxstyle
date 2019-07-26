@@ -12,6 +12,10 @@
 
 <body <?php body_class(); ?>>
 
+<?php if ( function_exists( 'wp_body_open' ) ) { wp_body_open(); } ?>
+
+<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'boxstyle' ); ?></a>
+
 <div id="wrapper">
 
 	<div class="container" id="page">
@@ -116,4 +120,4 @@
 					</div>
 				<?php endif; ?>
 				
-				<div class="main-inner group">
+				<div class="main-inner group" id="content">

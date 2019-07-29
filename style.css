@@ -1,7 +1,7 @@
 /*
 Theme Name: Boxstyle
 Theme URI: http://alx.media/themes/boxstyle/
-Version: 1.1.7
+Version: 1.1.8
 Description: <a href="http://alx.media/themes/boxstyle/">Boxstyle</a> is a flexible personal blog theme with plenty of options. Optimized for all devices, this theme will stand out with a unique colorful left bar with social links and a header profile image, name and description. It includes a featured posts slider, a day and night mode switch and three different blog layouts: standard, grid and list. Set the theme to any width and accent color you wish. Disable or enable the wave style. Use a sidebar to the left or right, or disable it entirely - it is all up to you.
 Author: Alexander Agnarson
 Author URI: http://alx.media
@@ -102,6 +102,25 @@ hr { border: 0; background: #eee; height: 1px; margin: 30px 0; }
 /*  base : font awesome square size
 /* ------------------------------------ */
 .fa { width: 1em; text-align: center; }
+
+/* temporary font awesome 5 fix for alx-extensions plugin */
+.sharrre-header .share .fa:before,
+.sharrre-footer .share .fa:before { font-family: "Font Awesome 5 Brands"; font-style: normal; font-variant: normal; text-rendering: auto; line-height: 1; }
+.sharrre-header .fa-twitter:before { content: "\f099"; }
+.sharrre-header .fa-facebook-square:before { content: "\f082"; }
+.sharrre-header .fa-pinterest:before { content: "\f0d2"; }
+.sharrre-header .fa-linkedin-square:before { content: "\f08c"; }
+.sharrre-header .count .fa:before,
+.sharrre-footer .count .fa:before,
+.alx-tabs-nav i:before { font-family: "Font Awesome 5 Free"; font-weight: 900; font-style: normal; font-variant: normal; text-rendering: auto; line-height: 1; }
+.sharrre-header .count .fa-plus:before { content: "\f067"; }
+.sharrre-footer .count .fa-plus:before { content: "\f067"; }
+.sharrre-footer .fa-twitter:before { content: "\f099"; }
+.sharrre-footer .fa-facebook-square:before { content: "\f082"; }
+.alx-tabs-nav .fa-clock-o:before { content: "\f017"; }
+.alx-tabs-nav .fa-star:before { content: "\f005"; }
+.alx-tabs-nav .fa-comments-o:before { content: "\f086"; }
+.alx-tabs-nav .fa-tags:before { content: "\f02c"; }
 
 /*  base : fonts
 /* ------------------------------------ */
@@ -221,7 +240,7 @@ input, textarea, button, select, label { font-family: inherit; }
 
 .themeform.searchform div { position: relative; }
 .themeform.searchform div input { padding-left: 26px; line-height: 20px; }
-.themeform.searchform div:after { color: #ccc; line-height: 24px; font-size: 14px; content: "\f002"; position: absolute; left: 10px; top: 6px; font-family: FontAwesome; }
+.themeform.searchform div:after { color: #ccc; line-height: 24px; font-size: 14px; content: "\f002"; position: absolute; left: 10px; top: 6px; font-family: "Font Awesome 5 Free"; font-weight: 900; }
 
 /*  base : entry
 /* ------------------------------------ */
@@ -244,7 +263,7 @@ input, textarea, button, select, label { font-family: inherit; }
 .entry address { margin-bottom: 1em; }
 .entry blockquote { position: relative; color: #777; font-style: italic; margin: 0 0 20px 0; padding-left: 50px; }
 .entry blockquote p { margin-bottom: 0.75em; }
-.entry blockquote:before { content: "\f10d"; color: #ccc; font-size: 32px; font-style: normal; font-family: FontAwesome; text-align: center; position: absolute; left: 0; top: 0; }
+.entry blockquote:before { content: "\f10d"; color: #ccc; font-size: 32px; font-style: normal; font-family: "Font Awesome 5 Free"; font-weight: 900; text-align: center; position: absolute; left: 0; top: 0; }
 .entry blockquote.twitter-tweet:before { content: "\f099"; }
 .entry code, .entry pre { font-family: Monaco, "Courier New", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", monospace; font-size: 11px; }
 .entry pre { background: url(img/pre.png) repeat top; padding: 18px 20px; margin: 30px 0; border: 1px solid #ddd; line-height: 19px; white-space: pre-wrap; word-wrap: break-word; overflow-x: auto; overflow-y: hidden; }
@@ -343,7 +362,7 @@ h1, h2, h3, h4, h5, h6 { color: #333; font-weight: 600; -ms-word-wrap: break-wor
 
 #btn-mode { background: rgba(255,255,255,0.15); position: relative; color: #fff; text-align: center; display: block; padding: 38px 0; font-size: 24px;
 box-shadow: inset 0 1px 0 rgba(255,255,255,0.1), inset 0 -1px 0 rgba(255,255,255,0.1), 0 1px 0 rgba(0,0,0,0.1);  }
-.dark-mode #btn-mode .fa:before { content: "\f205"; }
+.dark-mode #btn-mode i:before { content: "\f205"; }
 
 #btn-mode:hover:after { top: 35px; background: #333; font-size: 14px; color: #fff; content: attr(title); display: block; left: 60px; padding: 4px 10px; position: absolute; white-space: nowrap; 
 -webkit-border-radius: 3px; border-radius: 3px; }
@@ -498,7 +517,7 @@ box-shadow: 0 0 2px rgba(255,255,255,0.4);
 .thumb-icon .fa-play { margin: -1px 0 0 2px; }
 .thumb-icon.small { width: 24px; height: 24px; position: absolute; bottom: 50%; left: 50%; margin: 0 0 -12px -12px;
 -webkit-border-radius: 3px; border-radius: 3px; }
-.thumb-icon.small .fa { font-size: 12px; line-height: 16px; padding: 5px 0; }
+.thumb-icon.small i { font-size: 12px; line-height: 16px; padding: 5px 0; }
 
 /*  common : nav
 /* ------------------------------------ */
@@ -507,7 +526,7 @@ box-shadow: 0 0 2px rgba(255,255,255,0.4);
 .nav-toggle i { font-size: 24px; padding: 10px 0; }
 .nav-text { display: none; float: right; font-size: 16px; line-height: 24px; padding: 13px 20px; }
 .nav li > a:after,
-.nav > li > a:after { font-family: FontAwesome; display: inline-block; }
+.nav > li > a:after { font-family: "Font Awesome 5 Free"; font-weight: 900; display: inline-block; }
 
 @media only screen and (min-width: 720px) {
 	
@@ -608,7 +627,7 @@ box-shadow: 0 0 2px rgba(255,255,255,0.4);
 .toggle-search { background: #198cff; border-radius: 20px; color: rgba(255,255,255,0.8); font-size: 18px; line-height: 24px; cursor: pointer; padding: 6px 14px; display: block; position: absolute; right: 30px; bottom: 10px; }
 .toggle-search:hover,
 .toggle-search.active { color: #fff; }
-.toggle-search.active .fa.fa-search:before { content: "\f00d"; font-size: 22px; }
+.toggle-search.active i:before { content: "\f00d"; font-size: 22px; }
 .search-expand { display: none; position: absolute; bottom: 0; right: 78px; width: 340px; }
 .search-expand-inner { padding: 0 10px 10px; }
 .search-expand .themeform input { background: #f2f2f2; width: 100%; border: 1px solid #eee; border-radius: 20px; }
@@ -892,23 +911,23 @@ article > .pad { padding-top: 50px; padding-bottom: 50px; }
 .post-category { font-size: 14px; font-weight: 600; color: #bbb; margin-bottom: 8px; }
 .post-list .entry { font-size: 15px; color: #999; margin-bottom: 8px; }
 .post-date { font-size: 14px; color: #bbb; font-weight: 600; margin-bottom: 8px; }
-.post-date .fa { margin-right: 4px; } 
+.post-date i { margin-right: 4px; } 
 
 /*  post : circle icon
 /* ------------------------------------ */
 .format-circle { background: #f2f2f2; position: absolute; width: 30px; height: 30px; border-radius: 10px; position: absolute; }
-.format-circle .fa:before { content: "\f040"; position: relative; display: block; color: #999; font-size: 12px; text-align: center; width: 30px; height: 30px; line-height: 30px; }
-.page .format-circle .fa:before { content: "\f15c"; }
-.sticky .format-circle .fa:before { content: "\f005"; }
-.format-standard .format-circle .fa:before { content: "\f040"; }
-.format-image .format-circle .fa:before { content: "\f030"; }
-.format-video .format-circle .fa:before { content: "\f03d"; }
-.format-quote .format-circle .fa:before { content: "\f10d"; }
-.format-link .format-circle .fa:before { content: "\f0c1"; }
-.format-chat .format-circle .fa:before { content: "\f0e6"; }
-.format-status .format-circle .fa:before { content: "\f0a1"; }
-.format-gallery .format-circle .fa:before { content: "\f03e"; }
-.format-audio .format-circle .fa:before { content: "\f028"; }
+.format-circle i:before { content: "\f040"; position: relative; display: block; color: #999; font-size: 12px; text-align: center; width: 30px; height: 30px; line-height: 30px; }
+.page .format-circle i:before { content: "\f15c"; }
+.sticky .format-circle i:before { content: "\f005"; }
+.format-standard .format-circle i:before { content: "\f303"; }
+.format-image .format-circle i:before { content: "\f030"; }
+.format-video .format-circle i:before { content: "\f03d"; }
+.format-quote .format-circle i:before { content: "\f10d"; }
+.format-link .format-circle i:before { content: "\f0c1"; }
+.format-chat .format-circle i:before { content: "\f0e6"; }
+.format-status .format-circle i:before { content: "\f0a1"; }
+.format-gallery .format-circle i:before { content: "\f03e"; }
+.format-audio .format-circle i:before { content: "\f028"; }
 
 /*  post : front widgets
 /* ------------------------------------ */
@@ -998,7 +1017,7 @@ article > .pad { padding-top: 50px; padding-bottom: 50px; }
 /* ------------------------------------ */
 .author-bio { background: #f4f4f4; border-radius: 10px; position: relative; padding: 15px 15px 10px 95px; color: #777; margin-bottom: 40px; }
 .author-bio .bio-avatar { float: left; margin: 0 0 8px -80px; width: 64px; height: auto; position: relative; }
-.author-bio .bio-avatar:after { background: #198cff; position: absolute; right: 0; bottom: 0; padding: 4px 4px; content: "\f040"; color: #fff; font-size: 12px; line-height: 12px; width: 12px; font-style: normal; font-family: FontAwesome; text-align: center; -webkit-border-radius: 3px; border-radius: 3px; }
+.author-bio .bio-avatar:after { background: #198cff; position: absolute; right: 0; bottom: 0; padding: 4px 4px; content: "\f303"; color: #fff; font-size: 10px; line-height: 12px; width: 12px; font-style: normal; font-family: "Font Awesome 5 Free"; font-weight: 900; text-align: center; -webkit-border-radius: 3px; border-radius: 3px; }
 .author-bio .bio-avatar img { display: block; width: 100%; height: auto; -webkit-border-radius: 3px; border-radius: 3px; }
 .author-bio p { margin-bottom: 8px; }
 .author-bio .bio-name { color: #333; font-weight: 600; margin-bottom: 4px; }
@@ -1085,7 +1104,7 @@ transition-property: background color; transition-duration: 0.2s; transition-tim
 .widget > ul li:before,
 .widget > ul li a:before,
 .widget > div > ul li a:before,
-.widget_calendar caption:before { font-family: FontAwesome; font-size: 12px; margin-right: 6px; color: #ccc; display: inline-block!important; width: 1em; text-align: center; }
+.widget_calendar caption:before { font-family: "Font Awesome 5 Free"; font-weight: 900; font-size: 12px; margin-right: 6px; color: #ccc; display: inline-block!important; width: 1em; text-align: center; }
 .widget > ul li a:hover:before { color: #999; }
 
 .widget_archive > ul > li a:before { content: "\f073"; } 
@@ -1102,12 +1121,12 @@ transition-property: background color; transition-duration: 0.2s; transition-tim
 /* ------------------------------------ */
 .widget > h3 { position: relative; }
 .widget > h3 > span { display: inline-block; position: relative; bottom: -1px; }
-.widget > h3:after { font-family: FontAwesome; color: #198cff; font-size: 18px; font-weight: 400; text-align: center; float: right; content: "\f067"; }
-.widget_archive > h3:after { content: "\f114"; }
+.widget > h3:after { font-family: "Font Awesome 5 Free"; font-weight: 900; color: #198cff; font-size: 18px; text-align: center; float: right; content: "\f067"; }
+.widget_archive > h3:after { content: "\f073"; }
 .widget_categories > h3:after { content: "\f02e"; }
 .widget_links > h3:after { content: "\f08e"; }
 .widget_meta > h3:after { content: "\f138"; }
-.widget_recent_comments > h3:after { content: "\f0e6"; }
+.widget_recent_comments > h3:after { content: "\f086"; }
 .widget_recent_entries > h3:after { content: "\f017"; }
 .widget_calendar > h3:after { content: "\f271"; }
 .widget_rss > h3:after { content: "\f09e"; }
@@ -1281,7 +1300,7 @@ transition-property: background color; transition-duration: 0.2s; transition-tim
 .commentlist .fn, .pinglist .ping-link { color: #333; font-size: 13px; font-style: normal; font-weight: 600; }
 .commentlist .says { display: none; }
 .commentlist .avatar { position: absolute; left: -60px; top: 0; width: 48px; height: 48px; -webkit-border-radius: 3px; border-radius: 3px; }
-.commentlist .comment-meta:before, .pinglist .ping-meta:before { color: #ccc; content: "\f017"; font-family: FontAwesome; font-size: 10px; margin-right: 3px; vertical-align: 4%; } 
+.commentlist .comment-meta:before, .pinglist .ping-meta:before { color: #ccc; content: "\f017"; font-family: "Font Awesome 5 Free"; font-weight: 900; font-size: 10px; margin-right: 3px; vertical-align: 4%; } 
 .commentlist .comment-meta a, .pinglist .ping-meta { color: #aaa; }
 .commentlist .reply { font-size: 13px; line-height: 16px; }
 .commentlist .reply a { color: #aaa; }
@@ -1300,10 +1319,10 @@ transition-property: background color; transition-duration: 0.2s; transition-tim
 
 /* post author & admin comment */
 .commentlist li.bypostauthor > .comment-body:after,
-.commentlist li.comment-author-admin > .comment-body:after { background: #198cff; display: block; position: absolute; content: "\f040"; color: #fff; line-height: 12px; width: 12px; font-style: normal; font-family: FontAwesome; text-align: center; }
+.commentlist li.comment-author-admin > .comment-body:after { background: #198cff; display: block; position: absolute; content: "\f303"; color: #fff; line-height: 12px; width: 12px; font-style: normal; font-family: "Font Awesome 5 Free"; font-weight: 900; text-align: center; }
 .commentlist li.comment-author-admin > .comment-body:after { content: "\f005"; /* star for admin */ }
 .commentlist li.bypostauthor > .comment-body:after,
-.commentlist li.comment-author-admin > .comment-body:after { top: 32px; left: -28px; font-size: 10px; padding: 2px; -webkit-border-radius: 3px; border-radius: 3px; }
+.commentlist li.comment-author-admin > .comment-body:after { top: 32px; left: -28px; font-size: 8px; padding: 2px; -webkit-border-radius: 3px; border-radius: 3px; }
 .commentlist li li.bypostauthor > .comment-body:after,
 .commentlist li li.comment-author-admin > .comment-body:after { top: 22px; left: -26px; font-size: 8px; padding: 1px; -webkit-border-radius: 2px; border-radius: 2px; }
 
@@ -1371,7 +1390,7 @@ li #reply-title { font-size: 0; margin: 0!important; padding: 0; height: 0; bord
 /* level 2 */
 .child-menu > li > ul { border-top: 1px solid #f4f4f4; border-bottom: 1px solid #f4f4f4; }
 .child-menu > li > ul > li > a { font-size: 15px; border-bottom: 1px solid #f4f4f4; border-left: 1px solid #f4f4f4; border-right: 1px solid #f4f4f4; padding: 11px 20px; }
-.child-menu > li > ul > li > a:before { font-family: FontAwesome; content: "\f067"; font-weight: normal; font-size: 18px; margin-right: 8px; opacity: 0.3; }
+.child-menu > li > ul > li > a:before { font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f067"; font-size: 18px; margin-right: 8px; opacity: 0.3; }
 
 /* level 3 */
 .child-menu > li ul ul { padding: 6px 0; border-left: 10px solid #f4f4f4; border-right: 1px solid #f4f4f4; border-bottom: 1px solid #f4f4f4; }
@@ -1390,7 +1409,7 @@ li #reply-title { font-size: 0; margin: 0!important; padding: 0; height: 0; bord
 .wp-pagenavi a,
 .wp-pagenavi span { color: #aaa; font-size: 16px; padding: 7px 8px; display: inline-block; margin: 0 2px 10px; }
 .wp-pagenavi span.pages { font-size: 17px; font-weight: 300; display: block; margin-bottom: 1em!important; border: none!important; }
-.wp-pagenavi span.pages:before { content: "\f15c"; font-family: FontAwesome; margin-right: 6px; }
+.wp-pagenavi span.pages:before { content: "\f15c"; font-family: "Font Awesome 5 Free"; font-weight: 900; margin-right: 6px; }
 .wp-pagenavi span.extend { border: none!important; border-bottom: 3px solid transparent; border-top: 1px solid transparent; }
 .wp-pagenavi a:hover,
 .wp-pagenavi a:active,
@@ -1465,7 +1484,7 @@ html[xmlns] .slides { display: block; }
 .flex-direction-nav .flex-disabled {opacity: .3!important; filter:alpha(opacity=30); cursor: default; }
 
 /* direction nav arrows */
-.flex-direction-nav a:before { color: #fff; font-family: FontAwesome; font-size: 20px; line-height: 24px; position: absolute; text-align: center; left: 0; right: 0; top: 9px; text-indent: 0; }
+.flex-direction-nav a:before { color: #fff; font-family: "Font Awesome 5 Free"; font-weight: 900; font-size: 20px; line-height: 24px; position: absolute; text-align: center; left: 0; right: 0; top: 9px; text-indent: 0; }
 .flex-direction-nav .flex-next:before { content:"\f054"; }
 .flex-direction-nav .flex-prev:before { content: "\f053"; }
 

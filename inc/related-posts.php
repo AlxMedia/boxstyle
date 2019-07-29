@@ -3,7 +3,7 @@
 <?php if ( $related->have_posts() ): ?>
 
 <h4 class="heading">
-	<i class="fa fa-hand-o-right"></i><?php esc_html_e('You may also like...','boxstyle'); ?>
+	<i class="fas fa-hand-point-right"></i><?php esc_html_e('You may also like...','boxstyle'); ?>
 </h4>
 
 <ul class="related-posts group">
@@ -19,9 +19,9 @@
 					<?php elseif ( get_theme_mod('placeholder') != 'off' ): ?>
 						<img src="<?php echo get_template_directory_uri(); ?>/img/thumb-medium.png" alt="<?php the_title_attribute(); ?>" />
 					<?php endif; ?>
-					<?php if ( has_post_format('video') && !is_sticky() ) echo'<span class="thumb-icon small"><i class="fa fa-play"></i></span>'; ?>
-					<?php if ( has_post_format('audio') && !is_sticky() ) echo'<span class="thumb-icon small"><i class="fa fa-volume-up"></i></span>'; ?>
-					<?php if ( is_sticky() ) echo'<span class="thumb-icon small"><i class="fa fa-star"></i></span>'; ?>
+					<?php if ( has_post_format('video') && !is_sticky() ) echo'<span class="thumb-icon small"><i class="fas fa-play"></i></span>'; ?>
+					<?php if ( has_post_format('audio') && !is_sticky() ) echo'<span class="thumb-icon small"><i class="fas fa-volume-up"></i></span>'; ?>
+					<?php if ( is_sticky() ) echo'<span class="thumb-icon small"><i class="fas fa-star"></i></span>'; ?>
 				</a>
 			</div><!--/.post-thumbnail-->
 			

@@ -101,7 +101,7 @@ hr { border: 0; background: #eee; height: 1px; margin: 30px 0; }
 
 /*  base : font awesome square size
 /* ------------------------------------ */
-.fa { width: 1em; text-align: center; }
+.fa, .fab, .fal, .far, .fas { width: 1em; text-align: center; }
 
 /* temporary font awesome 5 fix for alx-extensions plugin */
 .sharrre-header .share .fa:before,

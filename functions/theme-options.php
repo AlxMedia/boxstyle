@@ -24,7 +24,7 @@ Kirki::add_section( 'reviewlink', array(
 	'panel'       => 'options',
 	'type'        => 'link',
 	'button_text' => esc_html__( 'Write a Review', 'boxstyle' ),
-	'button_url'  => 'https://wordpress.org/support/theme/boxstyle/reviews/?filter=5#new-post',
+	'button_url'  => 'https://wordpress.org/support/theme/boxstyle/reviews/#new-post',
 	'priority'    => 1,
 ) );
 

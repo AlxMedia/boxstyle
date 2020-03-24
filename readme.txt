@@ -81,6 +81,14 @@ Sidebar images
 
 == Changelog ==
 
+= 1.2.1 - 2020-03-25 =
+* Removed ?filter=5 from theme review link
+* Removed responsive css on/off option
+* Removed unused alx-extensions plugin override css
+* Improved support for Gutenberg
+* Updated to Kirki 3.1.0
+* Updated language files
+
 = 1.2.0 - 2020-02-25 =
 * Fixed comments form checkbox position
 * Updated to Font Awesome 5.12.1

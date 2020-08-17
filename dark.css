@@ -228,7 +228,7 @@ hr { background: #333; }
 #header .nav-menu.mobile { background: transparent; border-top: none; position: relative; z-index: 3; border-top: 1px solid rgba(255,255,255,0.06); border-bottom: 1px solid rgba(255,255,255,0.1); }
 #header .nav-menu.mobile .svg-icon { fill: #fff; }
 #header .nav-menu.mobile button.active .svg-icon { fill: #fff; }
-#header .nav-menu.mobile ul ul { background: rgba(0,0,0,0.05); }
+#header .nav-menu.mobile ul ul { background: rgba(255,255,255,0.04); }
 #header .nav-menu.mobile ul li .menu-item-wrapper,
 #header .nav-menu.mobile ul ul li .menu-item-wrapper { border-bottom: 1px solid rgba(255,255,255,0.07); }
 #header .nav-menu.mobile > div > ul > li:first-child .menu-item-wrapper { border-top: 1px solid rgba(255,255,255,0.07); }

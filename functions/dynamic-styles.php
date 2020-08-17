@@ -102,7 +102,7 @@ if ( ! function_exists( 'boxstyle_dynamic_css' ) ) {
 				}
 			}
 			// primary color
-			if ( get_theme_mod('color-1','#55acee') != '#55acee' ) {
+			if ( get_theme_mod('color-1','#198cff') != '#198cff' ) {
 				$styles .= '
 ::selection { background-color: '.esc_attr( get_theme_mod('color-1') ).'; }
 ::-moz-selection { background-color: '.esc_attr( get_theme_mod('color-1') ).'; }

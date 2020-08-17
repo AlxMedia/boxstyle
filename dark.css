@@ -191,6 +191,8 @@ hr { background: #333; }
 .child-menu > li ul ul a:hover,
 .child-menu > li ul ul li.current_page_item > a { background: #2d2d2d; }
 
+#btn-mode { color: #fff; }
+
 /* menu header styling */
 #header .nav-menu:not(.mobile) { background: #222; border-bottom: 1px solid rgba(255,255,255,0.05); }
 #header .nav-menu:not(.mobile) { border-top-color: rgba(255,255,255,0.05); }

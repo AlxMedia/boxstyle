@@ -88,6 +88,19 @@ if ( ! function_exists( 'boxstyle_setup' ) ) {
 add_action( 'after_setup_theme', 'boxstyle_setup' );
 
 
+/*  Custom navigation
+/* ------------------------------------ */
+require_once 'functions/nav.php';
+$nav = new \AlxMedia\Nav();
+$nav->enqueue(
+	[
+		'script' => 'js/nav.js',
+		'inline' => false,
+	]
+);
+$nav->init();
+
+
 /*  Custom logo
 /* ------------------------------------ */
 if ( ! function_exists( 'boxstyle_custom_logo' ) ) {

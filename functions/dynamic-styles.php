@@ -109,10 +109,6 @@ if ( ! function_exists( 'boxstyle_dynamic_css' ) ) {
 
 a,
 .themeform label .required,
-#nav-mobile .nav li > a:hover,
-#nav-mobile .nav li.current_page_item > a, 
-#nav-mobile .nav li.current-menu-item > a,
-#nav-mobile .nav li.current-post-parent > a,
 .post-hover:hover .post-title a,
 .post-title a:hover,
 .post-nav li a:hover span,
@@ -155,18 +151,10 @@ a,
 .wp-pagenavi a:active,
 .wp-pagenavi span.current { border-bottom-color: '.esc_attr( get_theme_mod('color-1') ).';  }
 
-@media only screen and (min-width: 720px) {
-	#nav-header .nav li.current_page_item > a, 
-	#nav-header .nav li.current-menu-item > a,
-	#nav-header .nav li.current-menu-ancestor > a,
-	#nav-header .nav li.current-post-parent > a { border-bottom-color: '.esc_attr( get_theme_mod('color-1') ).'; }
-}
-@media only screen and (max-width: 719px) {
-	#nav-header .nav li > a:hover,
-	#nav-header .nav li.current_page_item > a, 
-	#nav-header .nav li.current-menu-item > a,
-	#nav-header .nav li.current-post-parent > a { color: '.esc_attr( get_theme_mod('color-1') ).'; }
-}	
+#header .nav-menu:not(.mobile) > div > ul > li.current_page_item > span, 
+#header .nav-menu:not(.mobile) > div > ul > li.current-menu-item > span, 
+#header .nav-menu:not(.mobile) > div > ul > li.current-menu-ancestor > span, 
+#header .nav-menu:not(.mobile) > div > ul > li.current-post-parent > span { border-color: '.esc_attr( get_theme_mod('color-1') ).'; }
 				'."\n";
 			}
 			// background color

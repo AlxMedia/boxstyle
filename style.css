@@ -1,7 +1,7 @@
 /*
 Theme Name: Boxstyle
 Theme URI: http://alx.media/themes/boxstyle/
-Version: 1.2.8
+Version: 1.2.9
 Requires at least: 5.0
 Requires PHP: 5.6
 Tested up to: 5.5
@@ -546,10 +546,7 @@ box-shadow: 0 0 2px rgba(255,255,255,0.4);
 
 /*  header : search
 /* ------------------------------------ */
-.toggle-search { background: #198cff; border-radius: 20px; position: absolute; top: 12px; right: 40px; z-index: 3; border: 0; width: 50px; color: #333; text-align: center; font-size: 20px; line-height: 24px; cursor: pointer; padding: 6px 0; margin: 0; display: block; }
-@media only screen and (max-width: 719px) {
-	.toggle-search { outline: none; }
-}
+.toggle-search { background: #198cff; outline: none; border-radius: 20px; position: absolute; top: 12px; right: 40px; z-index: 3; border: 0; width: 50px; color: #333; text-align: center; font-size: 20px; line-height: 24px; cursor: pointer; padding: 6px 0; margin: 0; display: block; }
 .search-expand { display: none; position: absolute; bottom: 13px; right: 100px; width: 320px; z-index: 3; }
 .search-expand-inner {  }
 .search-expand .themeform input { background: #f2f2f2; width: 100%; border: 1px solid #eee; border-radius: 20px; }

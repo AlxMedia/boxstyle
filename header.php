@@ -46,7 +46,7 @@
 					</div><!--/.group-->
 					
 					<?php if ( has_nav_menu('mobile') ): ?>
-						<div id="header-menu-mobile">
+						<div id="wrap-nav-mobile">
 							<?php \AlxMedia\Nav::nav_menu(array('theme_location'=>'mobile','menu_id' => 'nav-mobile','fallback_cb'=> false)); ?>
 							
 							<?php if ( get_theme_mod( 'header-search', 'on' ) == 'on' ): ?>
@@ -65,7 +65,7 @@
 					
 					<div id="header-sticky">
 						<?php if ( has_nav_menu('header') ): ?>
-							<div id="header-menu-header">
+							<div id="wrap-nav-header">
 								<?php \AlxMedia\Nav::nav_menu(array('theme_location'=>'header','menu_id' => 'nav-header','fallback_cb'=> false)); ?>
 								
 								<?php if ( get_theme_mod( 'header-search', 'on' ) == 'on' ): ?>

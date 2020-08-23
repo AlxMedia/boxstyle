@@ -558,14 +558,14 @@ box-shadow: 0 0 2px rgba(255,255,255,0.4);
 .toggle-search.active #svg-search { display: none; }
 .toggle-search.active #svg-close { display: block; }
 
-#header-menu-header,
-#header-menu-mobile { position: relative; }
+#wrap-nav-header,
+#wrap-nav-mobile { position: relative; }
 
 @media only screen and (min-width: 720px) {
-	.mobile-menu #header-menu-mobile { display: none; }
+	.mobile-menu #wrap-nav-mobile { display: none; }
 }
 @media only screen and (max-width: 719px) {
-	.mobile-menu #header-menu-header { display: none; } 
+	.mobile-menu #wrap-nav-header { display: none; } 
 }
 
 /* ------------------------------------------------------------------------- *

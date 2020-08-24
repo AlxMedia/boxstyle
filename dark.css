@@ -231,10 +231,10 @@ hr { background: #333; }
 #header .nav-menu.mobile ul ul { background: rgba(255,255,255,0.04); }
 #header .nav-menu.mobile ul li .menu-item-wrapper,
 #header .nav-menu.mobile ul ul li .menu-item-wrapper { border-bottom: 1px solid rgba(255,255,255,0.07); }
-#header .nav-menu.mobile > div > ul > li:first-child .menu-item-wrapper { border-top: 1px solid rgba(255,255,255,0.07); }
 #header .nav-menu.mobile ul li a { color: #fff; }
 #header .nav-menu.mobile ul button,
 #header .nav-menu.mobile ul ul button { border-left: 1px solid rgba(255,255,255,0.07); }
+#header .nav-menu.mobile > div > ul { border-top: 1px solid rgba(255,255,255,0.07); }
 
 /* menu footer styling */
 #footer .menu-toggle-icon span { background: #fff; }
@@ -261,7 +261,7 @@ hr { background: #333; }
 #footer .nav-menu.mobile ul ul { background: rgba(255,255,255,0.03); }
 #footer .nav-menu.mobile ul li .menu-item-wrapper,
 #footer .nav-menu.mobile ul ul li .menu-item-wrapper { border-bottom: 1px solid rgba(255,255,255,0.07); }
-#footer .nav-menu.mobile > div > ul > li:first-child .menu-item-wrapper { border-top: 1px solid rgba(255,255,255,0.07); }
 #footer .nav-menu.mobile ul li a { color: #fff; }
 #footer .nav-menu.mobile ul button,
 #footer .nav-menu.mobile ul ul button { border-left: 1px solid rgba(255,255,255,0.07); }
+#footer .nav-menu.mobile > div > ul { border-top: 1px solid rgba(255,255,255,0.07); }

@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Boxstyle\n"
-"POT-Creation-Date: 2020-08-17 12:30+0200\n"
+"POT-Creation-Date: 2021-03-03 15:06+0100\n"
 "PO-Revision-Date: 2018-09-21 21:27+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -10,7 +10,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.2.3\n"
+"X-Generator: Poedit 2.4.2\n"
 "X-Poedit-KeywordsList: __;_e;_x;_ex;_n;_nx;_n_noop;_nx_noop;"
 "translate_nooped_plural;number_format_i18n;date_i18n;esc_html__;esc_html_e;"
 "esc_html_x;esc_attr__;esc_attr_e;esc_attr_x\n"
@@ -49,19 +49,19 @@ msgstr ""
 msgid "Continue reading..."
 msgstr ""
 
-#: footer.php:64
+#: footer.php:66
 msgid "Y"
 msgstr ""
 
-#: footer.php:64
+#: footer.php:66
 msgid "All Rights Reserved."
 msgstr ""
 
-#: footer.php:70
+#: footer.php:72
 msgid "Powered by"
 msgstr ""
 
-#: footer.php:70
+#: footer.php:72
 msgid "Theme by"
 msgstr ""
 
@@ -77,75 +77,75 @@ msgstr ""
 msgid "Footer"
 msgstr ""
 
-#: functions.php:173
+#: functions.php:175
 msgid "Primary"
 msgstr ""
 
-#: functions.php:173
+#: functions.php:175
 msgid "Normal full width sidebar"
 msgstr ""
 
-#: functions.php:175 functions/theme-options.php:303
+#: functions.php:177 functions/theme-options.php:303
 msgid "Footer Ads"
 msgstr ""
 
-#: functions.php:175
+#: functions.php:177
 msgid "Footer ads area"
 msgstr ""
 
-#: functions.php:177
+#: functions.php:179
 msgid "Frontpage Top 1"
 msgstr ""
 
-#: functions.php:177 functions.php:178 functions.php:179 functions.php:180
+#: functions.php:179 functions.php:180 functions.php:181 functions.php:182
 msgid "Frontpage area"
 msgstr ""
 
-#: functions.php:178
+#: functions.php:180
 msgid "Frontpage Top 2"
 msgstr ""
 
-#: functions.php:179
+#: functions.php:181
 msgid "Frontpage Bottom 1"
 msgstr ""
 
-#: functions.php:180
+#: functions.php:182
 msgid "Frontpage Bottom 2"
 msgstr ""
 
-#: functions.php:182
+#: functions.php:184
 msgid "Footer 1"
 msgstr ""
 
-#: functions.php:182 functions.php:183 functions.php:184 functions.php:185
+#: functions.php:184 functions.php:185 functions.php:186 functions.php:187
 msgid "Widgetized footer"
 msgstr ""
 
-#: functions.php:183
+#: functions.php:185
 msgid "Footer 2"
 msgstr ""
 
-#: functions.php:184
+#: functions.php:186
 msgid "Footer 3"
 msgstr ""
 
-#: functions.php:185
+#: functions.php:187
 msgid "Footer 4"
 msgstr ""
 
-#: functions.php:721
+#: functions.php:723
 msgid "Alx Extensions"
 msgstr ""
 
-#: functions.php:725
+#: functions.php:727
 msgid "Meta Box"
 msgstr ""
 
-#: functions.php:729
+#: functions.php:731
 msgid "Regenerate Thumbnails"
 msgstr ""
 
-#: functions.php:733
+#: functions.php:735
 msgid "WP-PageNavi"
 msgstr ""
 
@@ -174,24 +174,24 @@ msgstr ""
 msgid "Post Options"
 msgstr ""
 
-#: functions/nav.php:167
+#: functions/nav.php:170
 msgid "Expand Menu"
 msgstr ""
 
-#: functions/nav.php:209
+#: functions/nav.php:212
 msgid "Toggle Child Menu"
 msgstr ""
 
-#: functions/nav.php:283 functions/nav.php:297
+#: functions/nav.php:286 functions/nav.php:300
 #, php-format
 msgid "<span class=\"screen-reader-text\">%1$s </span>%2$s"
 msgstr ""
 
-#: functions/nav.php:284
+#: functions/nav.php:287
 msgid "Current Page:"
 msgstr ""
 
-#: functions/nav.php:298
+#: functions/nav.php:301
 msgid "Current Page Parent"
 msgstr ""
 
@@ -799,11 +799,11 @@ msgstr ""
 msgid "Wave Style"
 msgstr ""
 
-#: header.php:17
+#: header.php:19
 msgid "Skip to content"
 msgstr ""
 
-#: header.php:90
+#: header.php:94
 msgid "Switch Color"
 msgstr ""
 

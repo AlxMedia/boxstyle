@@ -90,8 +90,10 @@ add_action( 'after_setup_theme', 'boxstyle_setup' );
 
 /*  Custom navigation
 /* ------------------------------------ */
-add_action( 'wp', function() {
+if ( ! class_exists( '\Boxstyle\Nav' ) ) {
 	require_once 'functions/nav.php';
+}
+add_action( 'wp', function() {
 	$nav = new \Boxstyle\Nav();
 	$nav->enqueue(
 		[

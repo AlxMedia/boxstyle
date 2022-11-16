@@ -17,7 +17,7 @@
 		</h2><!--/.post-title-->
 		
 		<div class="post-date">
-			<i class="fa fa-clock-o"></i><?php the_time( get_option('date_format') ); ?>
+			<i class="far fa-clock"></i><?php the_time( get_option('date_format') ); ?>
 		</div><!--/.post-date-->
 		
 		<?php get_template_part('inc/post-formats'); ?>

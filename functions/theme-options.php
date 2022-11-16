@@ -24,7 +24,7 @@ Kirki::add_section( 'reviewlink', array(
 	'panel'       => 'options',
 	'type'        => 'link',
 	'button_text' => esc_html__( 'Write a Review', 'boxstyle' ),
-	'button_url'  => 'https://wordpress.org/support/theme/boxstyle/reviews/?filter=5#new-post',
+	'button_url'  => 'https://wordpress.org/support/theme/boxstyle/reviews/#new-post',
 	'priority'    => 1,
 ) );
 
@@ -81,15 +81,6 @@ Kirki::add_section( 'styling', array(
 /*  Add Fields
 /* ------------------------------------ */
 
-// General: Responsive Layout
-Kirki::add_field( 'boxstyle_theme', array(
-	'type'			=> 'switch',
-	'settings'		=> 'responsive',
-	'label'			=> esc_html__( 'Responsive Layout', 'boxstyle' ),
-	'description'	=> esc_html__( 'Mobile and tablet optimizations (responsive.css)', 'boxstyle' ),
-	'section'		=> 'general',
-	'default'		=> 'on',
-) );
 // General: Mobile Sidebar
 Kirki::add_field( 'boxstyle_theme', array(
 	'type'			=> 'switch',
@@ -580,7 +571,7 @@ Kirki::add_field( 'boxstyle_theme', array(
 	'label'			=> esc_html__( 'Create Social Links', 'boxstyle' ),
 	'description'	=> esc_html__( 'Create and organize your social links', 'boxstyle' ),
 	'section'		=> 'social',
-	'tooltip'		=> esc_html__( 'Font Awesome names:', 'boxstyle' ) . ' <a href="https://fontawesome.com/v4.7.0/icons/" target="_blank"><strong>' . esc_html__( 'View All', 'boxstyle' ) . ' </strong></a>',
+	'tooltip'		=> esc_html__( 'Font Awesome names:', 'boxstyle' ) . ' <a href="https://fontawesome.com/v5/search?s=brands" target="_blank"><strong>' . esc_html__( 'View All', 'boxstyle' ) . ' </strong></a>',
 	'row_label'		=> array(
 		'type'	=> 'text',
 		'value'	=> esc_html__('social link', 'boxstyle' ),
@@ -597,7 +588,7 @@ Kirki::add_field( 'boxstyle_theme', array(
 		'social-icon'	=> array(
 			'type'			=> 'text',
 			'label'			=> esc_html__( 'Icon Name', 'boxstyle' ),
-			'description'	=> esc_html__( 'Font Awesome icons. Ex: fa-facebook ', 'boxstyle' ) . ' <a href="https://fontawesome.com/v4.7.0/icons/" target="_blank"><strong>' . esc_html__( 'View All', 'boxstyle' ) . ' </strong></a>',
+			'description'	=> esc_html__( 'Font Awesome icons. Ex: fa-facebook ', 'boxstyle' ) . ' <a href="https://fontawesome.com/v5/search?s=brands" target="_blank"><strong>' . esc_html__( 'View All', 'boxstyle' ) . ' </strong></a>',
 			'default'		=> 'fa-',
 		),
 		'social-link'	=> array(

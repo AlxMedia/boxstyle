@@ -61,8 +61,8 @@
 	#nav-mobile.nav-container,
 	#nav-header.nav-container,
 	#nav-footer.nav-container { padding-left: 0; padding-right: 0; }
-	.toggle-search { left: 20px; right: auto; top: 5px; bottom: auto; }
-	.search-expand { bottom: auto; right: 90px; left: 64px; top: 5px; width: auto; z-index: 99; }
+	.toggle-search { left: 20px; right: auto; top: 7px; bottom: auto; }
+	.search-expand { bottom: auto; right: 110px; left: 80px; top: 10px; width: auto; z-index: 99; }
 	
 	/* footer */
 	#footer-bottom .pad { padding-top: 50px; padding-bottom: 40px; }
@@ -166,7 +166,7 @@
 	
 	#nav-mobile .nav,
 	#nav-header .nav { padding-bottom: 50px; }
-	#btn-mode { background: transparent; box-shadow: none; -webkit-box-shadow: none; color: #999; position: absolute; bottom: 66px; right: 54px; padding: 10px; margin-bottom: 2px; }
+	#btn-mode { background: transparent; box-shadow: none; -webkit-box-shadow: none; color: #333; position: absolute; bottom: 68px; right: 58px; padding: 10px; margin-bottom: 2px; }
 	#btn-mode:hover:before,
 	#btn-mode:hover:after { display: none; }
 	

@@ -66,6 +66,9 @@ if ( ! function_exists( 'boxstyle_setup' ) ) {
 		// Enable support for selective refresh of widgets in customizer
 		add_theme_support( 'customize-selective-refresh-widgets' );
 		
+		// Disable support for widgets block editor
+		remove_theme_support( 'widgets-block-editor' );
+		
 		// Thumbnail sizes
 		add_image_size( 'boxstyle-small', 200, 200, true );
 		add_image_size( 'boxstyle-medium', 520, 292, true );
@@ -86,6 +89,23 @@ if ( ! function_exists( 'boxstyle_setup' ) ) {
 	
 }
 add_action( 'after_setup_theme', 'boxstyle_setup' );
+
+
+/*  Custom navigation
+/* ------------------------------------ */
+if ( ! class_exists( '\Boxstyle\Nav' ) ) {
+	require_once 'functions/nav.php';
+}
+add_action( 'wp', function() {
+	$nav = new \Boxstyle\Nav();
+	$nav->enqueue(
+		[
+			'script' => 'js/nav.js',
+			'inline' => false,
+		]
+	);
+	$nav->init();
+} );
 
 
 /*  Custom logo
@@ -198,9 +218,9 @@ if ( ! function_exists( 'boxstyle_styles' ) ) {
 	
 	function boxstyle_styles() {
 		wp_enqueue_style( 'boxstyle-style', get_stylesheet_uri() );
-		if ( get_theme_mod('responsive','on') =='on' ) { wp_enqueue_style( 'boxstyle-responsive', get_template_directory_uri().'/responsive.css' ); }
+		wp_enqueue_style( 'boxstyle-responsive', get_template_directory_uri().'/responsive.css' );
 		if ( get_theme_mod('dark','off') == 'on' ) { wp_enqueue_style( 'boxstyle-dark', get_template_directory_uri().'/dark.css' ); }
-		wp_enqueue_style( 'boxstyle-font-awesome', get_template_directory_uri().'/fonts/font-awesome.min.css' );
+		wp_enqueue_style( 'boxstyle-font-awesome', get_template_directory_uri().'/fonts/all.min.css' );
 	}
 	
 }
@@ -370,7 +390,7 @@ if ( ! function_exists( 'boxstyle_social_links' ) ) {
 					if ( isset($item['social-target']) && !empty($item['social-target']) ) 
 						{ $target = 'target="_blank"'; } else $target = '';
 					if ( isset($item['social-icon']) && !empty($item['social-icon']) ) 
-						{ $icon = 'class="fa ' .esc_attr( $item['social-icon'] ). '"'; } else $icon = '';
+						{ $icon = 'class="fab ' .esc_attr( $item['social-icon'] ). '"'; } else $icon = '';
 					if ( isset($item['social-color']) && !empty($item['social-color']) ) 
 						{ $color = 'style="color: ' .esc_attr( $item['social-color'] ). ';"'; } else $color = '';
 					
@@ -678,18 +698,6 @@ if ( ! function_exists( 'boxstyle_html_js_class' ) ) {
 add_action( 'wp_head', 'boxstyle_html_js_class', 1 );
 
 
-/*  Script for no-js / js class
-/* ------------------------------------ */
-if ( ! function_exists( 'boxstyle_html_js_class' ) ) {
-
-	function boxstyle_html_js_class () {
-		echo '<script>document.documentElement.className = document.documentElement.className.replace("no-js","js");</script>'. "\n";
-	}
-	
-}
-add_action( 'wp_head', 'boxstyle_html_js_class', 1 );
-
-
 /*  Admin panel css
 /* ------------------------------------ */
 if ( ! function_exists( 'boxstyle_admin_panel_css' ) ) {
@@ -731,10 +739,6 @@ if ( ! function_exists( 'boxstyle_plugins' ) ) {
 				array(
 					'name' => esc_html__( 'WP-PageNavi', 'boxstyle' ),
 					'slug' => 'wp-pagenavi',
-				),
-				array(
-					'name' => esc_html__( 'Responsive Lightbox', 'boxstyle' ),
-					'slug' => 'responsive-lightbox',
 				)
 			);	
 			tgmpa( $plugins );
@@ -852,3 +856,25 @@ if ( ! function_exists( 'boxstyle_flexslider_gallery' ) ) {
 }
 add_action( 'wp_enqueue_scripts', 'boxstyle_flexslider_gallery' );
 
+
+/*  Accessibility IE11 fix - https://git.io/vWdr2
+/* ------------------------------------ */
+function boxstyle_skip_link_focus_fix() {
+	?>
+	<script>
+	/(trident|msie)/i.test(navigator.userAgent)&&document.getElementById&&window.addEventListener&&window.addEventListener("hashchange",function(){var t,e=location.hash.substring(1);/^[A-z0-9_-]+$/.test(e)&&(t=document.getElementById(e))&&(/^(?:a|select|input|button|textarea)$/i.test(t.tagName)||(t.tabIndex=-1),t.focus())},!1);
+	</script>
+	<?php
+}
+add_action( 'wp_print_footer_scripts', 'boxstyle_skip_link_focus_fix' );
+
+
+/*  Disable wp lazy load, fix for flexslider
+/* ------------------------------------ */
+add_filter('wp_lazy_loading_enabled', '__return_false');
+
+function boxstyle_disable_lazy_load_featured_images($attr, $attachment = null) {
+	$attr['loading'] = 'eager';
+	return $attr;
+}
+add_filter('wp_get_attachment_image_attributes', 'boxstyle_disable_lazy_load_featured_images');

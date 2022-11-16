@@ -87,30 +87,6 @@ jQuery(document).ready(function($) {
 			$('body').toggleClass('s1-expand').toggleClass('s1-collapse');
 		}
 	});
-
-/*  Dropdown menu animation
-/* ------------------------------------ */
-	$('.nav ul.sub-menu').hide();
-	$('.nav li').hover( 
-		function() {
-			$(this).children('ul.sub-menu').slideDown('fast');
-		}, 
-		function() {
-			$(this).children('ul.sub-menu').hide();
-		}
-	);
-	
-/*  Dropdown menu animation
-/* ------------------------------------ */
-	$('.dropdown-buttons ul.sub-menu').hide();
-	$('.dropdown-buttons li').hover( 
-		function() {
-			$(this).children('ul.sub-menu').slideDown('fast');
-		}, 
-		function() {
-			$(this).children('ul.sub-menu').hide();
-		}
-	);
 	
 /*  Fitvids
 /* ------------------------------------ */
@@ -142,37 +118,38 @@ jQuery(document).ready(function($) {
 		pushup:         ''
 	});
 	
-/*  Mobile menu smooth toggle height
+/*  Trap focus
 /* ------------------------------------ */	
-	$('.nav-toggle').on('click', function() {
-		slide($('.nav-wrap .nav', $(this).parent()));
-	});
-	 
-	function slide(content) {
-		var wrapper = content.parent();
-		var contentHeight = content.outerHeight(true);
-		var wrapperHeight = wrapper.height();
-	 
-		wrapper.toggleClass('expand');
-		if (wrapper.hasClass('expand')) {
-		setTimeout(function() {
-			wrapper.addClass('transition').css('height', contentHeight);
-		}, 10);
-	}
-	else {
-		setTimeout(function() {
-			wrapper.css('height', wrapperHeight);
-			setTimeout(function() {
-			wrapper.addClass('transition').css('height', 0);
-			}, 10);
-		}, 10);
-	}
-	 
-	wrapper.one('transitionEnd webkitTransitionEnd transitionend oTransitionEnd msTransitionEnd', function() {
-		if(wrapper.hasClass('open')) {
-			wrapper.removeClass('transition').css('height', 'auto');
-		}
-	});
+	// add all the elements inside modal which you want to make focusable
+	const  focusableElements =
+		'button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])';
+	const modal = document.querySelector('.search-trap-focus'); // select the modal by it's id
+
+	if ( modal ) { 
+		const firstFocusableElement = modal.querySelectorAll(focusableElements)[0]; // get first element to be focused inside modal
+		const focusableContent = modal.querySelectorAll(focusableElements);
+		const lastFocusableElement = focusableContent[focusableContent.length - 1]; // get last element to be focused inside modal
+
+
+		document.addEventListener('keydown', function(e) {
+		  let isTabPressed = e.key === 'Tab' || e.keyCode === 9;
+
+		  if (!isTabPressed) {
+			return;
+		  }
+
+		  if (e.shiftKey) { // if shift key pressed for shift + tab combination
+			if (document.activeElement === firstFocusableElement) {
+			  lastFocusableElement.focus(); // add focus for the last focusable element
+			  e.preventDefault();
+			}
+		  } else { // if tab key is pressed
+			if (document.activeElement === lastFocusableElement) { // if focused has reached to last focusable element then focus first focusable element after pressing tab
+			  firstFocusableElement.focus(); // add focus for the first focusable element
+			  e.preventDefault();
+			}
+		  }
+		});	
 	}
 	
 });

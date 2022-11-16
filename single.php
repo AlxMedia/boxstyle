@@ -13,7 +13,7 @@
 				<h1 class="post-title"><?php the_title(); ?></h1>
 				
 				<div class="post-date">
-					<i class="fa fa-clock-o"></i><?php the_time( get_option('date_format') ); ?>
+					<i class="far fa-clock"></i><?php the_time( get_option('date_format') ); ?>
 				</div><!--/.post-date-->
 				
 				<?php if( get_post_format() ) { get_template_part('inc/post-formats'); } ?>

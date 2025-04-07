@@ -8,7 +8,7 @@ Tags: blog, news, entertainment, one-column, two-columns, right-sidebar, left-si
 
 == Description ==
 
-Boxstyle is a flexible personal blog theme with plenty of options. Optimized for all devices, this theme will stand out with a unique colorful left bar with social links and a header profile image, name and description. It includes a featured posts slider, a day and night mode switch and three different blog layouts: standard, grid and list. Set the theme to any width and accent color you wish. Disable or enable the wave style. Use a sidebar to the left or right, or disable it entirely - it is all up to you. Demo: http://demo.alx.media/x/?theme=Boxstyle
+Boxstyle is a flexible personal blog theme with plenty of options. Optimized for all devices, this theme will stand out with a unique colorful left bar with social links and a header profile image, name and description. It includes a featured posts slider, a day and night mode switch and three different blog layouts: standard, grid and list. Set the theme to any width and accent color you wish. Disable or enable the wave style. Use a sidebar to the left or right, or disable it entirely - it is all up to you. Demo: https://demo.agnarson.com/?theme=Boxstyle
 
 == Installation ==
 
@@ -19,7 +19,7 @@ Boxstyle is a flexible personal blog theme with plenty of options. Optimized for
 
 == Documentation ==
 
-http://alx.media/documentation/
+https://agnarson.com/documentation/
 
 == Copyright ==
 

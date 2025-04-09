@@ -878,3 +878,16 @@ function boxstyle_disable_lazy_load_featured_images($attr, $attachment = null) {
 	return $attr;
 }
 add_filter('wp_get_attachment_image_attributes', 'boxstyle_disable_lazy_load_featured_images');
+
+
+/*  Kirki deprecated fix
+/* ------------------------------------ */
+function boxstyle_kirki_config( $config ) {
+
+	if ( isset( $config['compiler'] ) ) {
+		unset( $config['compiler'] );
+	}
+
+	return $config;
+}
+add_filter( 'kirki/config', 'boxstyle_kirki_config', 999 );
